@@ -318,6 +318,10 @@ strong, span, small, label, i {
   transform: scale(1.4);
   background: #334eff;
 }
+.owl-nav{
+  display: flex;
+      justify-content: center;
+}
 .owl-theme .owl-nav .owl-next,
 .owl-theme .owl-nav .owl-prev {
   margin: 0px;
@@ -664,7 +668,7 @@ strong, span, small, label, i {
   background: #2e384f;
 }
 .btn.bg-royal-blue:before {
-  background: #233ff3;
+  background: #02767F;
 }
 .btn.bg-light-green:before {
   background: #0fb296;
@@ -709,7 +713,7 @@ strong, span, small, label, i {
   background-color: #2e384f;
 }
 .store-btn.bg-royal-blue:hover {
-  background-color: #233ff3;
+  background-color: #233ff38c;
 }
 
 .btn-underline {
@@ -831,7 +835,7 @@ strong, span, small, label, i {
 /* custom colors - start
 ================================================== */
 .bg-royal-blue {
-  background-color: #334eff;
+  background-color: #02767F;
 }
 
 .bg-light-green {
@@ -2874,7 +2878,7 @@ button {
 /* product grid - start
 ================================================== */
 .product-grid {
-  max-width: 270px;
+  /* max-width: 270px; */
   position: relative;
   margin: 40px auto 0px;
 }
@@ -6135,3 +6139,71 @@ button {
 /* ====================================================================================================
 9 - media screen and (max-width: 320px) - end
 ==================================================================================================== */
+
+.main-color{
+  color:rgba(54, 65, 90, 1);
+}
+.second-color{
+  color:rgba(2, 118, 127, 1);
+}
+
+.hero-text{
+  font-size: 73px;
+}
+.border-btn{
+  border:2px solid rgba(2, 118, 127, 1);
+  border-radius:30px;
+  color: rgba(2, 118, 127, 1);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+@media(max-width:425px){
+  .hero-text{
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .hero-size{
+   
+    font-size: 14px;
+    text-align: center;
+   
+    }
+  
+}
+@media(max-width:768px){
+  .hero-text{
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .hero-size{
+   
+    font-size: 18px;
+    text-align: center;
+   
+    }
+  
+}
+@media(max-width:768px){
+ .promotion-text{
+  font-size: 18px;
+ }
+ .text-offers{
+  text-align: center;
+ }
+ .img-offers{
+  display: flex;
+  justify-content: center;
+ }
+ .title-offers{
+  justify-content: center !important;
+
+ }
+ .btn-offers{
+  justify-content: center !important;
+
+ }
+}

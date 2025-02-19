@@ -10,13 +10,63 @@
   <link rel="shortcut icon" href="assets/images/logo.png" />
 
   <!-- css include -->
+   
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/line-awesome.min.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/jquery-ui.css" />
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
   <!-- custom - css include -->
   <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+     <style>
+        .swiper-button-prev, .swiper-button-next {
+            width: 40px;
+            height: 40px;
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .swiper-button-prev::after, .swiper-button-next::after {
+            font-size: 16px;
+            color: #333;
+            font-weight: bold;
+        }
+        .patient-card {
+          border: 2px solid rgba(232, 238, 247, 1);
+            border-radius: 20px;
+            padding: 50px;
+            text-align: left;
+            height: 500px;
+        }
+       
+        .badg {
+            background: rgba(235, 237, 240, 1);
+            color: #333;
+            font-weight: bold;
+            padding: 10px 25px;
+            border-radius: 30px;
+            width: 150px;
+            text-align: center;
+        }
+        .bade {
+            background: rgba(235, 237, 240, 1);
+            color: #333;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 30px;
+            width: 120px;
+            text-align: center;
+        }
+    </style>
+</head>
 </head>
 
 <body class="home-v1">
@@ -67,7 +117,7 @@
             <nav class="main-menu ul-li-center clearfix">
               <ul class="clearfix">
                 <li><a href="shop-grid-3-column.html">Shop</a></li>
-                <li><a href="shop-grid-3-column.html">Courses</a></li>
+                <li><a href="courses.html">Courses</a></li>
                 <li><a href="about.html">Find a Patient</a></li>
                 <li><a href="about.html">Our System</a></li>
                 <li><a href="contact.html">Jobs</a></li>
@@ -413,104 +463,20 @@
     <section id="slider-section" class="slider-section clearfix">
       <div class="item d-flex align-items-center" data-background="assets/images/hero-bg.png" style="height: 100vh">
         <div class="container">
-          <div class="text-center mt-5 mb-5">
-            <img src="assets/images/LOGO PHYSIOLINE SVG 1.png" alt="" />
+          
+          <div class="d-flex flex-column align-items-center">
+            <h1 class="hero-text">Physicaltherapy Software Solutions</h1>
+            
           </div>
-          <div class="row justify-content-lg-start justify-content-md-center">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-              <div class="slider-content">
-                <ul>
-                  <h3 class="item-title animate-item">
-                    Product Development and Service Implementation:
-                  </h3>
-                  <li class="hero-li">
-                    Counseling Services Platform: Develop an online platform
-                    for patients to schedule and receive virtual consultations
-                    with certified therapists.
-                  </li>
-                  <li class="hero-li">
-                    Case Management Tools: Create an integrated system for
-                    physical therapists to track patient progress, manage
-                    cases, and collaborate with healthcare teams.
-                  </li>
-                  <li class="hero-li">
-                    Educational Courses and Training: Design interactive
-                    courses and webinars for professionals to earn
-                    certifications and stay updated.
-                  </li>
-                  <li class="hero-li">
-                    Job Matching Service: Develop a job portal specifically
-                    for the physical therapy industry to connect professionals
-                    with employment opportunities.
-                  </li>
-                  <li class="hero-li">
-                    Device Retail and Rental Services: Build an e-commerce
-                    section for selling and renting physical therapy equipment
-                    and assistive devices.
-                  </li>
-                  <li class="hero-li">
-                    Statistics and Data Analysis Tools: Offer analytics to
-                    clinics and professionals for performance tracking and
-                    market insights.
-                  </li>
-                  <li class="hero-li">
-                    Targeted Advertising Platform: Implement ad tools for
-                    partners and related businesses to reach relevant
-                    audiences
-                  </li>
-                </ul>
-              </div>
-            </div>
+          <div class="hero-size">
+            <h5 class="hero-praph">All Physical Therapist Needs is Our Mission
+              From PT to PT </h5>
           </div>
+       
+          
         </div>
 
-        <!-- <div class="item d-flex align-items-center" data-background="assets/images/slider/bg_3.jpg">
-						<div class="container">
-							<div class="row justify-content-lg-start justify-content-md-center">
-								<div class="col-lg-7 col-md-9 col-sm-12 col-xs-12">
-									<div class="slider-content">
-										<span class="post-type animate-item"># Medical Store Theme</span>
-										<h3 class="item-title animate-item">
-											Medicia Medical Service and Woocommerce theme
-										</h3>
-										<p class="animate-item">
-											Medicia as always focused on the best treatments with affordable price through the best medical services.
-										</p>
-										<div class="btns-group ul-li animate-item clearfix">
-											<ul class="clearfix">
-												<li><a href="#!" class="btn bg-light-green">SHOP NOW</a></li>
-												<li><a href="#!" class="btn bg-default-black">LEARN MORE</a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="item d-flex align-items-center" data-background="assets/images/slider/bg_4.jpg">
-						<div class="container">
-							<div class="row text-center justify-content-center justify-content-md-center">
-								<div class="col-lg-7 col-md-9 col-sm-12 col-xs-12">
-									<div class="slider-content">
-										<span class="post-type animate-item"># Medical Store Theme</span>
-										<h3 class="item-title animate-item">
-											Medicia Medical Service and Woocommerce theme
-										</h3>
-										<p class="animate-item">
-											Medicia as always focused on the best treatments with affordable price through the best medical services.
-										</p>
-										<div class="btns-group ul-li-center animate-item clearfix">
-											<ul class="clearfix">
-												<li><a href="#!" class="btn bg-light-green">SHOP NOW</a></li>
-												<li><a href="#!" class="btn bg-default-black">LEARN MORE</a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div> -->
+        
       </div>
     </section>
     <!-- slider-section - end
@@ -518,75 +484,109 @@
 
     <!-- promotion-section - start
 			================================================== -->
-    <section id="promotion-section" class="promotion-section sec-ptb-100 pb-0 decoration-wrap clearfix">
-      <div class="container">
-        <div class="masonry-grid">
-          <div class="grid-sizer"></div>
-
-          <div class="grid-item">
-            <div class="promotion-fullimage clearfix">
-              <a href="#!" class="item-image">
-                <img src="assets/images/promotion/img_1.svg" alt="image_not_found" />
-              </a>
-              <div class="promotion-content position-bottom text-right">
-                <h3 class="item-title" style="color: #000">
-                  <strong class="text-light-green d-block mb-1">50% OFF</strong>
-                  Courses
-                </h3>
-                <a href="#!" class="btn bg-light-green">Learn More</a>
-              </div>
+      <section class="my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h2 class="main-color promotion-text">Find a Private Cases</h2>
+                        <button class="main-color border-btn px-4 py-1">Upload cv</button>
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <div class="grid-item w-66">
-            <div class="promotion-fullimage clearfix">
-              <a href="#!" class="item-image">
-                <img src="assets/images/promotion/img_2.svg" alt="image_not_found" />
-              </a>
-              <div class="promotion-content size-increase position-vertical-center">
-                <h3 class="item-title">
-                  <strong class="text-light-green d-block mb-1">50% OFF</strong>
-                  <span class="d-block text-uppercase" style="color: #36415a">Shop</span>
-                </h3>
-                <a href="#!" class="btn-underline">Visit Store</a>
-              </div>
+    
+           
+               <div class="container py-5">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="patient-card p-3">
+                        <h3 style="color: #02767F;" class="fw-bold">Patient Name</h3>
+                        <h6 style="color: #5F6680;" >Cairo, Egypt</h6>
+                        <p style="color: #02767F;">+201025952387</p>
+                        <p style="color: #02767F;">4 minutes ago</p>
+                        <p class="badg">Male</p>
+                        <p  class="bade">32 Year</p>
+                        <p class="mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem officiis, doloremque in quaerat nesciunt molestias quis, animi tenetur illum perspiciatis repellendus saepe obcaecati eligendi quidem, minus delectus consectetur? Tempore, debitis!</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="patient-card p-3">
+                        <h3 style="color: #02767F;" class="fw-bold">Patient Name</h3>
+                        <h6 style="color: #5F6680;" >Cairo, Egypt</h6>
+                        <p style="color: #02767F;">+201025952387</p>
+                        <p style="color: #02767F;">4 minutes ago</p>
+                        <p class="badg">Male</p>
+                        <p  class="bade">32 Year</p>
+                        <p class="mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem officiis, doloremque in quaerat nesciunt molestias quis, animi tenetur illum perspiciatis repellendus saepe obcaecati eligendi quidem, minus delectus consectetur? Tempore, debitis!</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="patient-card p-3">
+                        <h3 style="color: #02767F;" class="fw-bold">Patient Name</h3>
+                        <h6 style="color: #5F6680;" >Cairo, Egypt</h6>
+                        <p style="color: #02767F;">+201025952387</p>
+                        <p style="color: #02767F;">4 minutes ago</p>
+                        <p class="badg">Male</p>
+                        <p  class="bade">32 Year</p>
+                        <p class="mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem officiis, doloremque in quaerat nesciunt molestias quis, animi tenetur illum perspiciatis repellendus saepe obcaecati eligendi quidem, minus delectus consectetur? Tempore, debitis!</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="patient-card p-3">
+                        <h3 style="color: #02767F;" class="fw-bold">Patient Name</h3>
+                        <h6 style="color: #5F6680;" >Cairo, Egypt</h6>
+                        <p style="color: #02767F;">+201025952387</p>
+                        <p style="color: #02767F;">4 minutes ago</p>
+                        <p class="badg">Male</p>
+                        <p  class="bade">32 Year</p>
+                        <p class="mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem officiis, doloremque in quaerat nesciunt molestias quis, animi tenetur illum perspiciatis repellendus saepe obcaecati eligendi quidem, minus delectus consectetur? Tempore, debitis!</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="patient-card p-3">
+                        <h3 style="color: #02767F;" class="fw-bold">Patient Name</h3>
+                        <h6 style="color: #5F6680;" >Cairo, Egypt</h6>
+                        <p style="color: #02767F;">+201025952387</p>
+                        <p style="color: #02767F;">4 minutes ago</p>
+                        <p class="badg">Male</p>
+                        <p  class="bade">32 Year</p>
+                        <p class="mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem officiis, doloremque in quaerat nesciunt molestias quis, animi tenetur illum perspiciatis repellendus saepe obcaecati eligendi quidem, minus delectus consectetur? Tempore, debitis!</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="patient-card p-3">
+                        <h3 style="color: #02767F;" class="fw-bold">Patient Name</h3>
+                        <h6 style="color: #5F6680;" >Cairo, Egypt</h6>
+                        <p style="color: #02767F;">+201025952387</p>
+                        <p style="color: #02767F;">4 minutes ago</p>
+                        <p class="badg">Male</p>
+                        <p  class="bade">32 Year</p>
+                        <p class="mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem officiis, doloremque in quaerat nesciunt molestias quis, animi tenetur illum perspiciatis repellendus saepe obcaecati eligendi quidem, minus delectus consectetur? Tempore, debitis!</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="patient-card p-3">
+                        <h3 style="color: #02767F;" class="fw-bold">Patient Name</h3>
+                        <h6 style="color: #5F6680;" >Cairo, Egypt</h6>
+                        <p style="color: #02767F;">+201025952387</p>
+                        <p style="color: #02767F;">4 minutes ago</p>
+                        <p class="badg">Male</p>
+                        <p  class="bade">32 Year</p>
+                        <p class="mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem officiis, doloremque in quaerat nesciunt molestias quis, animi tenetur illum perspiciatis repellendus saepe obcaecati eligendi quidem, minus delectus consectetur? Tempore, debitis!</p>
+                    </div>
+                </div>
+               
             </div>
-          </div>
-
-          <div class="grid-item">
-            <div class="promotion-fullimage clearfix">
-              <a href="#!" class="item-image">
-                <img src="assets/images/promotion/img_3.svg" alt="image_not_found" />
-              </a>
-              <div class="promotion-content position-bottom text-right" style="top: 0">
-                <h3 class="item-title">
-                  <span class="d-block text-uppercase" style="color: #000">Jobs</span>
-                </h3>
-                <a href="#!" class="btn-underline">Visit List</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="grid-item">
-            <div class="promotion-fullimage clearfix">
-              <a href="#!" class="item-image">
-                <img src="assets/images/promotion/img_4.svg" alt="image_not_found" />
-              </a>
-              <div class="promotion-content position-top size-decrease">
-                <h3 class="item-title">
-                  <span class="d-block" style="color: #000; font-size: 30px">Need A Patient</span>
-                </h3>
-                <a href="#!" class="btn-underline">See Now</a>
-              </div>
-            </div>
-          </div>
+            <!-- Navigation Buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
-      </div>
-
-      <span class="decoration-image pill-image-1">
-        <img src="assets/images/decoration/pill_1.png" alt="pill_image_not_found" />
-      </span>
+    </div>
+        </div>
     </section>
+    
+     
     <!-- promotion-section - end
 			================================================== -->
 
@@ -599,31 +599,31 @@
         </div>
 
         <div class="tabs-nav ul-li-center clearfix">
-          <ul class="nav" role="tablist">
+          <ul class="nav d-flex justify-content-center" role="tablist">
             <li>
-              <a class="active" href="#pediatic" data-toggle="tab" role="tab">Pediatic</a>
+              <a class="active mt-3" href="#pediatic" data-toggle="tab" role="tab">Pediatic</a>
             </li>
             <li>
-              <a href="#sports" data-toggle="tab" role="tab">Sports rehabilitation</a>
+              <a class="mt-3" href="#sports" data-toggle="tab" role="tab">Sports rehabilitation</a>
             </li>
             <li>
-              <a href="#orthopric" data-toggle="tab" role="tab">Orthopric</a>
+              <a class="mt-3" href="#orthopric" data-toggle="tab" role="tab">Orthopric</a>
             </li>
             <li>
-              <a href="#nutition" data-toggle="tab" role="tab">Nutition</a>
+              <a class="mt-3" href="#nutition" data-toggle="tab" role="tab">Nutition</a>
             </li>
             <li>
-              <a href="#neuro" data-toggle="tab" role="tab">Neuro</a>
+              <a class="mt-3" href="#neuro" data-toggle="tab" role="tab">Neuro</a>
             </li>
             <li>
-              <a href="#beauty" data-toggle="tab" role="tab">Beauty & Dermatology</a>
+              <a class="mt-3" href="#beauty" data-toggle="tab" role="tab">Beauty & Dermatology</a>
             </li>
             <li>
-              <a href="#chest" data-toggle="tab" role="tab">
+              <a class="mt-3" href="#chest" data-toggle="tab" role="tab">
                 Chest & Cardio</a>
             </li>
             <li>
-              <a href="#other" data-toggle="tab" role="tab">Other</a>
+              <a class="mt-3" href="#other" data-toggle="tab" role="tab">Other</a>
             </li>
           </ul>
         </div>
@@ -635,7 +635,7 @@
                 <div class="product-grid text-center clearfix">
                   <div class="item-image">
                     <a href="shop-details-1.html" class="image-wrap">
-                      <img src="assets/images/product/img_1.jpg" alt="image_not_found" />
+                      <img src="assets/images/API_47382-INT_L2_US_Applicators_1il9fk6 1.svg" alt="image_not_found" />
                     </a>
                     <div class="post-label ul-li-right clearfix">
                       <ul class="clearfix">
@@ -688,7 +688,7 @@
                 <div class="product-grid text-center clearfix">
                   <div class="item-image">
                     <a href="shop-details-1.html" class="image-wrap">
-                      <img src="assets/images/product/img_2.jpg" alt="image_not_found" />
+                      <img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image_not_found" />
                     </a>
                     <div class="btns-group ul-li-center clearfix">
                       <ul class="clearfix">
@@ -735,7 +735,7 @@
                 <div class="product-grid text-center clearfix">
                   <div class="item-image">
                     <a href="shop-details-1.html" class="image-wrap">
-                      <img src="assets/images/product/img_3.jpg" alt="image_not_found" />
+                      <img src="assets/images/API_SYS-000656-000-00-INT_Chattanooga-SYS-000656-000-00-LightForce-XLi_1.svg" alt="image_not_found" />
                     </a>
                     <div class="post-label ul-li-right clearfix">
                       <ul class="clearfix">
@@ -787,7 +787,7 @@
                 <div class="product-grid text-center clearfix">
                   <div class="item-image">
                     <a href="shop-details-1.html" class="image-wrap">
-                      <img src="assets/images/product/img_4.jpg" alt="image_not_found" />
+                      <img src="assets/images/API_47382-INT_L2_US_Applicators_1il9fk6 1.svg" alt="image_not_found" />
                     </a>
                     <div class="btns-group ul-li-center clearfix">
                       <ul class="clearfix">
@@ -834,7 +834,7 @@
                 <div class="product-grid text-center clearfix">
                   <div class="item-image">
                     <a href="shop-details-1.html" class="image-wrap">
-                      <img src="assets/images/product/img_5.jpg" alt="image_not_found" />
+                      <img src="assets/images/API_SYS-000656-000-00-INT_Chattanooga-SYS-000656-000-00-LightForce-XLi_1.svg" alt="image_not_found" />
                     </a>
                     <div class="post-label ul-li-right clearfix">
                       <ul class="clearfix">
@@ -887,7 +887,7 @@
                 <div class="product-grid text-center clearfix">
                   <div class="item-image">
                     <a href="shop-details-1.html" class="image-wrap">
-                      <img src="assets/images/product/img_6.jpg" alt="image_not_found" />
+                      <img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image_not_found" />
                     </a>
                     <div class="post-label ul-li-right clearfix">
                       <ul class="clearfix">
@@ -939,7 +939,7 @@
                 <div class="product-grid text-center clearfix">
                   <div class="item-image">
                     <a href="shop-details-1.html" class="image-wrap">
-                      <img src="assets/images/product/img_7.jpg" alt="image_not_found" />
+                      <img src="assets/images/API_47382-INT_L2_US_Applicators_1il9fk6 1.svg" alt="image_not_found" />
                     </a>
                     <div class="btns-group ul-li-center clearfix">
                       <ul class="clearfix">
@@ -986,7 +986,7 @@
                 <div class="product-grid text-center clearfix">
                   <div class="item-image">
                     <a href="shop-details-1.html" class="image-wrap">
-                      <img src="assets/images/product/img_8.jpg" alt="image_not_found" />
+                      <img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image_not_found" />
                     </a>
                     <div class="post-label ul-li clearfix">
                       <ul class="clearfix">
@@ -1097,7 +1097,7 @@
                 <div class="product-grid text-center clearfix">
                   <div class="item-image">
                     <a href="shop-details-1.html" class="image-wrap">
-                      <img src="assets/images/product/img_2.jpg" alt="image_not_found" />
+                      <img src="assets/images/API_SYS-000656-000-00-INT_Chattanooga-SYS-000656-000-00-LightForce-XLi_1.svg" alt="image_not_found" />
                     </a>
                     <div class="btns-group ul-li-center clearfix">
                       <ul class="clearfix">
@@ -3992,74 +3992,56 @@
 
     <!-- offer-section - start
 			================================================== -->
-    <section id="offer-section" class="offer-section clearfix">
-      <div class="wrap-1600 sec-ptb-100 bg-gray decoration-wrap clearfix">
-        <div class="container">
-          <div class="offer-item clearfix">
-            <div
-              class="row align-items-center justify-content-lg-between justify-content-md-center justify-content-sm-center">
-              <div class="col-lg-5 col-md-7 col-sm-10 col-xs-12 order-last">
-                <div class="item-image">
-                  <img src="assets/images/offer/img_1.png" alt="image_not_found" />
-                </div>
-              </div>
-
-              <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
-                <div class="item-content">
-                  <h4 class="sub-title text-light-green mb-3">
-                    Intro Sale Offer!
-                  </h4>
-                  <h2 class="title-text mb-3">
-                    Buy all of your medicines at 50% offer.
-                  </h2>
-                  <p class="mb-30">
-                    Get extra cashback discounts and free international
-                    shipping.
-                  </p>
-
-                  <a href="#!" class="btn bg-light-green">SHOP NOW</a>
-                </div>
-              </div>
-            </div>
+    <section class="my-5">
+      <div class="container">
+        <div class="row justify-content-center d-flex align-items-center">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-offers">
+            <h1 style="color: #3A5CB1;">CLINIC MaNAEMENTS SYSTEMS</h1>
+            <h4 style="color: #5D362B;">by Phsioline</h4>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 img-offers">
+            <img style="max-width: 100%;" src="assets/images/Untitled-1سسس 3.svg" width="90%"  alt="">
           </div>
 
-          <span class="decoration-image leaf-image-1">
-            <img src="assets/images/decoration/leaf_1.png" alt="leaf_image_not_found" />
-          </span>
-          <span class="decoration-image leaf-image-2">
-            <img src="assets/images/decoration/leaf_1.png" alt="leaf_image_not_found" />
-          </span>
+          
         </div>
+        <div style="width: 800px; max-width: 100%;" class="d-flex justify-content-start title-offers ">
+          <h6 style="color: #000;">Empowering Physical Therapy Through Innvoation Where Healing Meets Tecnology, and Possibilities are Redefined</h6>
+          </div>
+        <div class="d-flex justify-content-start mt-4 btn-offers">
+          <button style="background-color: #02767F;" class="btn ">GET STarted</button>
+          </div>
       </div>
+      
     </section>
     <!-- offer-section - end
 			================================================== -->
 
     <!-- about-section - start
 		================================================== -->
-    <section id="about-section" class="about-section clearfix">
-      <div class="container-fluid">
-        <div class="about-title text-center mt-5 mb-5">
+    <section id="about-section" class="about-section clearfix my-5">
+      <div class="container">
+        <div class="about-title text-center mt-5 mb-2">
           <h1 class="title-text" style="color: #36415a">Who We Are</h1>
         </div>
-        <div class="row justify-content-center d-flex align-items-center" style="gap: 50px">
+        <div class="row justify-content-center d-flex align-items-center" style="gap: 20px">
           <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
             <div class="section-title mb-60">
               <ul>
-                <h1 class="text-light-green" style="font-size: 62px">
+                <h1 class="text-light-green">
                   PHYIOLINE
                 </h1>
-                <li style="font-size: 22px">
+                <li style="font-size: 18px" class="mt-1">
                   Physioline is a forward-thinking software company dedicated
                   to transforming the physical therapy and rehabilitation
                   industry
                 </li>
-                <li style="font-size: 22px">
+                <li style="font-size: 18px" class="mt-1">
                   We offer a diverse range of digital solutions tailored to
                   meet the evolving needs of therapists, students, and
                   healthcare institutions.
                 </li>
-                <li style="font-size: 22px">
+                <li style="font-size: 18px" class="mt-1">
                   Our platform encompasses services such as virtual
                   counseling, case management tools, educational courses, job
                   matching, device retail and rentals, data analytics, and
@@ -4070,15 +4052,17 @@
           </div>
           <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
             <div class="section-image text-center mb-60">
-              <img src="assets/images/colored-logo.svg" alt="image_not_found" width="75%" />
+              <img src="assets/images/WhatsApp Image 2025-02-07 at 15.13.29_0eded989 2.svg" alt="image_not_found" width="75%" />
+              <h5 style="color: #36415A;" class="mt-3">Dr Mahmoud Mosbah</h5>
+              <p>CEO</p>
             </div>
           </div>
         </div>
 
-        <div class="container-fluid">
+        <div class="container">
           <div class="mission">
-            <img src="assets/images/rocket.svg" alt="">
-            <h3 style="color: #000; display: inline;">Mission</h3>
+            <img src="assets/images/rocket.svg" alt="" width="50px">
+            <h3 style="color: #000; display: inline;" class="mx-2">Mission</h3>
             <p style="margin-left: 50px; font-size: 20px;">
               *Physioline* is to revolutionize the physical therapy landscape by
               providing cutting-edge digital solutions that empower clinics,
@@ -4089,8 +4073,8 @@
             </p>
           </div>
           <div class="vision">
-            <img src="assets/images/lamp.svg" alt="">
-            <h3 style="color: #000; display: inline;">Vision</h3>
+            <img src="assets/images/lamp.svg" alt="" width="50px">
+            <h3 style="color: #000; display: inline;" class="mx-2">Vision</h3>
             <p style="margin-left: 50px;  font-size: 20px;">
               Our vision is to be the leading global platform for physical
               therapy management, education, and analytics. We aim to create a
@@ -4112,10 +4096,10 @@
   <!-- footer-section - start
 		================================================== -->
   <footer id="footer-section" class="footer-section pb-30 mt-5 clearfix">
-    <div class="container">
-      <div class="widget-area mb-60 clearfix">
+    <div  class="container">
+      <div style="background-color: #F4F8FB; border-radius: 20px 0px 20px 0px;" class="widget-area clearfix p-5">
         <div class="row justify-content-lg-between justify-content-md-center justify-content-md-center">
-          <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <div class="about-content">
               <div class="brand-logo mb-4 clearfix">
                 <a href="index.html" class="brand-link">
@@ -4147,7 +4131,7 @@
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12">
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <div class="useful-links ul-li-block clearfix">
               <h3 class="widget-title" style="color: #36415A;">Physioline</h3>
               <ul class="clearfix">
@@ -4160,7 +4144,7 @@
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12">
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <div class="useful-links ul-li-block clearfix">
               <h3 class="widget-title" style="color: #36415A;">Quick Link</h3>
               <ul class="clearfix">
@@ -4169,33 +4153,7 @@
                 <li><a href="#!">Help Center</a></li>
               </ul>
             </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
-            <div class="payment-cards ul-li mb-30 clearfix">
-              <h3 class="widget-title">Payments</h3>
-              <p class="mb-3">Secure Payments</p>
-              <ul class="mb-3 clearfix">
-                <li>
-                  <a href="#!"><img src="assets/images/payment_card/card_1.png" alt="_not_found" /></a>
-                </li>
-                <li>
-                  <a href="#!"><img src="assets/images/payment_card/card_2.png" alt="_not_found" /></a>
-                </li>
-                <li>
-                  <a href="#!"><img src="assets/images/payment_card/card_3.png" alt="_not_found" /></a>
-                </li>
-                <li>
-                  <a href="#!"><img src="assets/images/payment_card/card_4.png" alt="_not_found" /></a>
-                </li>
-                <li>
-                  <a href="#!"><img src="assets/images/payment_card/card_5.png" alt="_not_found" /></a>
-                </li>
-              </ul>
-              <p class="mb-0">Powred by <a href="#!">stripe</a></p>
-            </div>
-
-            <div class="social-icon-circle ul-li clearfix">
+            <div class="social-icon-circle ul-li clearfix mt-5">
               <ul class="clearfix">
                 <li>
                   <a href="#!"><i class="lab la-facebook-f"></i></a>
@@ -4212,22 +4170,46 @@
               </ul>
             </div>
           </div>
+
+          
         </div>
       </div>
 
-      <div class="footer-bottom bg-gray text-center clearfix">
+      <div class="footer-bottom  text-center clearfix">
         <p class="mb-0">
-          ©Copyright 2020 <a href="#!">Marvel_Theme</a>. All Rights Reserved.
+          ©Copyright 2020 All Rights Reserved.
         </p>
-        <span class="decoration-image pill-image-1">
-          <img src="assets/images/colored-logo.svg" alt="pill_image_not_found" />
-        </span>
+       
       </div>
     </div>
   </footer>
   <!-- footer-section - end
 		================================================== -->
 
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                992: { slidesPerView: 4 },
+                768: { slidesPerView: 2 },
+                576: { slidesPerView: 1 },
+                425: { slidesPerView: 1 },
+                200: { slidesPerView: 1 },
+            }
+            
+        });
+    </script>
   <!-- jquery include -->
   <script src="assets/js/jquery-3.4.1.min.js"></script>
   <script src="assets/js/jquery-ui.js"></script>
@@ -4253,3 +4235,4 @@
 </body>
 
 </html>
+
