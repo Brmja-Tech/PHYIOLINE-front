@@ -576,7 +576,7 @@ strong, span, small, label, i {
 /* padding - margin setting - start 
 ================================================== */
 .sec-ptb-100 {
-  padding: 100px 0px;
+  padding: 50px 0px;
 }
 
 .pl-20 {
@@ -1555,7 +1555,7 @@ button {
   border-radius: 3px;
   text-align: center;
   display: inline-block;
-  background-color: #334eff;
+  background-color: #02767F;
 }
 .sidebar-menu-wrapper .sidebar-menu .mobile-accordion .card-body {
   margin: 0px -40px;
@@ -1645,7 +1645,7 @@ button {
   color: #636778;
 }
 .sidebar-menu-wrapper .sidebar-menu .menu_list > ul li:hover > a, .sidebar-menu-wrapper .sidebar-menu .menu_list > ul li.active > a {
-  color: #334eff;
+  color: #02767F;
   background-color: #f4f8fb;
 }
 .sidebar-menu-wrapper .sidebar-menu .menu_list > ul li.dropdown {
@@ -4336,11 +4336,22 @@ button {
 
 /* global reset - end */
 /* header section - start */
+
+.btn-login{
+  border:2px solid #fff;
+  border-radius: 30px;
+  font-size: 20px !important;
+
+}
 .home-v1 .header-section .main-menu > ul > li:hover > a, .home-v1 .header-section .main-menu > ul > li.active > a {
-  color: #00c9a7;
+  color: #02767F;
 }
 .home-v1 .header-section .btns-group > ul > li > button:hover, .home-v1 .header-section .btns-group > ul > li > button.active {
-  color: #00c9a7;
+  color: #02767F;
+}
+.btn-login:hover{
+  border:2px solid #02767F;
+
 }
 .home-v1 .cart-dropdown .cart-items-list > ul > li .item-price {
   color: #00c9a7;
@@ -4918,7 +4929,7 @@ button {
   /* sidebar - start */
   .sidebar-section {
     margin-top: 80px;
-    max-width: 370px;
+    /* max-width: 370px; */
   }
 
   /* sidebar - end */
@@ -4999,7 +5010,7 @@ button {
   /* shop details - end */
   /* shop - start */
   .shop-section .sidebar-section {
-    max-width: 370px;
+    /* max-width: 370px; */
     margin: 80px auto 0px;
   }
 
@@ -6151,9 +6162,9 @@ button {
   font-size: 73px;
 }
 .border-btn{
-  border:2px solid rgba(2, 118, 127, 1);
-  border-radius:30px;
-  color: rgba(2, 118, 127, 1);
+  background: linear-gradient(90deg, #04D5E5 0%, #02767F 100%);
+  border-radius:10px;
+  color: #fff;
   font-size: 16px;
   font-weight: bold;
 }
@@ -6187,9 +6198,32 @@ button {
     }
   
 }
+.promotion-text{
+  font-size: 28px;
+  margin-left: 15px;
+}
+.border-promotion{
+  border: 2px solid  #02767F;
+  /* border-image-source: linear-gradient(90deg, #02767F 0%, #04D5E5 100%); */
+  border-radius:22px;
+  padding: 10px 0;
+}
+
+.element-offers{
+  color: #02767F ;
+   font-size: 60px;
+}
+.element-offer{
+  color: #5D362B;  
+  font-size: 48px;
+}
+.span-offers{
+  color: #000; 
+  font-size: 26px;
+}
 @media(max-width:768px){
  .promotion-text{
-  font-size: 18px;
+  font-size: 16px;
  }
  .text-offers{
   text-align: center;
@@ -6206,4 +6240,52 @@ button {
   justify-content: center !important;
 
  }
+ .element-offers{
+  font-size: 40px;
+ }
+ .element-offer{
+ 
+  font-size: 32px;
 }
+.span-offers{
+  
+  font-size: 18px;
+}
+}
+@media(max-width:1100px){
+ .btn-login{
+  font-size: 18px !important;
+ }
+}
+
+.bg-cases{
+  background: linear-gradient(90deg, #7AE5ED 60.87%, #FFFFFF 100%);
+  border-radius: 30px;
+  padding: 60px 30px;
+}
+
+.element-Physiotherapy{
+  color:#02767F;
+  font-size: 48px;
+}
+.div-Physiotherapy{
+  position: relative;
+}
+.text-Physiotherapy{
+  position: absolute;
+  top: 30%;
+  right: 2%;
+}
+
+@media(max-width:768px){
+  .element-Physiotherapy{
+    font-size: 40px;
+  }
+}
+@media(max-width:685x){
+  .element-Physiotherapy{
+    font-size: 32px;
+  }
+}
+
+

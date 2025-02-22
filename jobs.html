@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+		<title>Physioline</title>
+		<link rel="shortcut icon" href="assets/images/logo.png" />
+
+		<!-- css include -->
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/line-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/jquery-ui.css">
+
+
+		<!-- custom - css include -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <style>
+             .patient-card {
+          border: 2px solid rgba(232, 238, 247, 1);
+            border-radius: 20px;
+            padding: 50px;
+            text-align: left;
+        }
+       
+        .badg {
+            background: rgba(235, 237, 240, 1);
+            color: #333;
+            font-weight: bold;
+            padding: 10px 25px;
+            border-radius: 30px;
+            width: 120px;
+            text-align: center;
+        }
+     
+        </style>
+
+	</head>
+
+
+	<body>
+
+
+		<!-- backtotop - start -->
+		<div id="thetop"></div>
+		<div id="backtotop">
+			<a href="#" id="scroll">
+				<i class="las la-arrow-up"></i>
+			</a>
+		</div>
+		<!-- backtotop - end -->
+
+		<!-- preloader - start -->
+		<!-- <div id="preloader"></div> -->
+		<!-- preloader - end -->
+
+
+		<!-- header-section - start
+		================================================== -->
+        <header id="header-section" class="header-section header-primary sticky-header clearfix">
+            <div class="content-wrap d-flex align-items-center">
+              <div class="container">
+                <div class="row align-items-center">
+                  <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                    <div class="brand-logo clearfix">
+                      <a href="index.html" class="brand-link">
+                        <img src="assets/images/LOGO PHYSIOLINE SVG 1.png" width="60%" alt="logo_not_found" />
+                      </a>
+        
+                      <div class="btns-group ul-li-right clearfix">
+                        <ul class="clearfix">
+                          <li>
+                            <button type="button" class="mobile-menu-btn">
+                              <i class="las la-bars"></i>
+                            </button>
+                          </li>
+                          <li>
+                            <button class="mobile-btn-cart">
+                              <i class="las la-shopping-bag"></i>
+                              <small class="cart-counter bg-light-green">03</small>
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+                    <nav class="main-menu ul-li-center clearfix">
+                      <ul class="clearfix">
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="privateCases.html">Find a Patient</a></li>
+                        <li><a href="System.html">Our System</a></li>
+                        <li><a href="jobs.html">Jobs</a></li>
+                        <li><a href="support.html">Support</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+        
+                  <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                    <div class="btns-group ul-li-right clearfix">
+                      <ul class="clearfix">
+                        <li>
+                          <button type="button" class="main-search-btn" data-toggle="collapse"
+                            data-target="#main-search-collapse" aria-expanded="false" aria-controls="main-search-collapse">
+                            <i class="la la-search"></i>
+                          </button>
+                        </li>
+        
+                        <li class="dropdown">
+                          <button class="btn-cart" id="cart-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="las la-shopping-bag"></i>
+                            <small class="cart-counter bg-light-green">03</small>
+                          </button>
+                          <div class="cart-dropdown dropdown-menu" aria-labelledby="cart-dropdown">
+                            <h3 class="title-text">Cart Items:- 03</h3>
+        
+                            <div class="cart-items-list ul-li-block clearfix">
+                              <ul class="clearfix">
+                                <li>
+                                  <div class="item-image">
+                                    <img src="assets/images/cart/img_1.png" alt="image_not_found" />
+                                  </div>
+                                  <div class="item-content">
+                                    <h4 class="item-title">Digital Thermometer</h4>
+                                    <span class="item-price">$39.50</span>
+                                  </div>
+                                  <button type="button" class="remove-btn">
+                                    <i class="las la-times"></i>
+                                  </button>
+                                </li>
+        
+                                <li>
+                                  <div class="item-image">
+                                    <img src="assets/images/cart/img_2.png" alt="image_not_found" />
+                                  </div>
+                                  <div class="item-content">
+                                    <h4 class="item-title">
+                                      Digital Infrared Thermometer
+                                    </h4>
+                                    <span class="item-price">$39.50</span>
+                                  </div>
+                                  <button type="button" class="remove-btn">
+                                    <i class="las la-times"></i>
+                                  </button>
+                                </li>
+        
+                                <li>
+                                  <div class="item-image">
+                                    <img src="assets/images/cart/img_3.png" alt="image_not_found" />
+                                  </div>
+                                  <div class="item-content">
+                                    <h4 class="item-title">
+                                      Digital Blood Pressure Machine
+                                    </h4>
+                                    <span class="item-price">$39.50</span>
+                                  </div>
+                                  <button type="button" class="remove-btn">
+                                    <i class="las la-times"></i>
+                                  </button>
+                                </li>
+                              </ul>
+                            </div>
+        
+                            <div class="btns-group ul-li clearfix">
+                              <ul class="clearfix">
+                                <li>
+                                  <a href="cart.html" class="btn bg-default-black">View Cart</a>
+                                </li>
+                                <li>
+                                  <a href="checkout.html" class="btn bg-light-green">Checkout</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="dropdown">
+                          <button  class="btn-cart btn-login px-4 py-1">
+                            Login
+                          </button>
+                          
+                        </li>
+        
+                       
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+            <!-- collapse search - start -->
+            <div class="main-search-collapse collapse" id="main-search-collapse">
+              <div class="main-search-form card">
+                <div class="container">
+                  <form action="#">
+                    <div class="form-item">
+                      <input type="search" name="search" placeholder="Search here..." />
+                      <button type="submit" class="submit-btn">
+                        <i class="la la-search"></i>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- collapse search - end -->
+          </header>
+        
+          <!-- sidebar mobile menu - start -->
+          <div class="sidebar-menu-wrapper">
+            <div id="sidebar-menu" class="sidebar-menu">
+              <span class="close-btn">
+                <i class="las la-times"></i>
+              </span>
+        
+              <div class="brand-logo text-center clearfix">
+                <a href="index.html" class="brand-link">
+                  <img src="assets/images/Frame 131.svg" alt="logo_not_found" />
+                </a>
+              </div>
+        
+              <div class="search-wrap">
+                <form action="#!">
+                  <div class="form-item mb-0">
+                    <input type="search" name="search" placeholder="Search your Products" />
+                    <button type="submit"><i class="la la-search"></i></button>
+                  </div>
+                </form>
+              </div>
+        
+              <div id="mobile-accordion" class="mobile-accordion">
+                <div class="card">
+                  <div class="card-header" id="heading-one">
+                    <button data-toggle="collapse" data-target="#collapse-one" aria-expanded="false"
+                      aria-controls="collapse-one">
+                      <i class="las la-shopping-bag"></i>
+                      Cart Item
+                      <small>03</small>
+                    </button>
+                  </div>
+                  <div id="collapse-one" class="collapse" aria-labelledby="heading-one" data-parent="#mobile-accordion">
+                    <div class="card-body">
+                      <div class="cart-items-list ul-li-block clearfix">
+                        <ul class="clearfix">
+                          <li>
+                            <div class="item-image">
+                              <img src="assets/images/cart/img_1.png" alt="image_not_found" />
+                            </div>
+                            <div class="item-content">
+                              <h4 class="item-title">Digital Thermometer</h4>
+                              <span class="item-price">$39.50</span>
+                            </div>
+                            <button type="button" class="remove-btn">
+                              <i class="las la-times"></i>
+                            </button>
+                          </li>
+        
+                          <li>
+                            <div class="item-image">
+                              <img src="assets/images/cart/img_2.png" alt="image_not_found" />
+                            </div>
+                            <div class="item-content">
+                              <h4 class="item-title">Digital Infrared Thermometer</h4>
+                              <span class="item-price">$39.50</span>
+                            </div>
+                            <button type="button" class="remove-btn">
+                              <i class="las la-times"></i>
+                            </button>
+                          </li>
+        
+                          <li>
+                            <div class="item-image">
+                              <img src="assets/images/cart/img_3.png" alt="image_not_found" />
+                            </div>
+                            <div class="item-content">
+                              <h4 class="item-title">
+                                Digital Blood Pressure Machine
+                              </h4>
+                              <span class="item-price">$39.50</span>
+                            </div>
+                            <button type="button" class="remove-btn">
+                              <i class="las la-times"></i>
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+        
+                      <div class="btns-group ul-li clearfix">
+                        <ul class="clearfix">
+                          <li>
+                            <a href="cart.html" class="btn bg-default-black">View Cart</a>
+                          </li>
+                          <li>
+                            <a href="checkout.html" class="btn bg-royal-blue">Checkout</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                
+              </div>
+        
+              <div class="menu_list ul-li-block clearfix">
+                <h3 class="widget-title">Menu List</h3>
+        
+                <ul class="clearfix">
+                  <li class="active"><a href="index.html">Home</a></li>
+                             <li><a href="shop.html">Shop</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="about.html">Find a Patient</a></li>
+                        <li><a href="System.html">Our System</a></li>
+                        <li><a href="jobs.html">Jobs</a></li>
+                        <li><a href="support.html">Support</a></li>
+                </ul>
+              </div>
+        
+              <div class="user-dropdown ul-li-block clearfix">
+                <h3 class="widget-title">User Settings</h3>
+                <ul class="clearfix">
+                  <li>
+                    <a href="#!"><i class="las la-user-circle"></i> Profile</a>
+                  </li>
+                  <li>
+                    <a href="#!"><i class="las la-user-cog"></i> Settings</a>
+                  </li>
+                  <li>
+                    <a href="#!"><i class="las la-sign-out-alt"></i> Logout</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="overlay"></div>
+          </div>
+		<!-- sidebar mobile menu - end -->
+		<!-- header-section - end
+		================================================== -->
+
+
+		<!-- main body - start
+		================================================== -->
+		<main>
+
+
+			<!-- breadcrumb-section - start
+			================================================== -->
+			<section id="slider-section" class="slider-section clearfix">
+				<div class="item d-flex align-items-center" data-background="assets/images/hero-bg.png" style="height: 70vh">
+				  <div class="container">
+					<div class="text-center mt-5 mb-5">
+						<h1>Jobs</h1>
+					</div>
+				  </div>
+		  
+				
+				</div>
+			  </section>
+			<!-- breadcrumb-section - end
+			================================================== -->
+
+
+			<!-- shop-section - start
+			================================================== -->
+			<section class="shop-section sec-ptb-100 mb-3 decoration-wrap clearfix">
+				<div class="container">
+                    
+        <div class="tabs-nav ul-li-center clearfix mb-5">
+            <ul class="nav d-flex justify-content-center" role="tablist">
+              <li>
+                <a class="active mt-3" href="#FindPatient" data-toggle="tab" role="tab">Find A Patient</a>
+              </li>
+              <li>
+                <a class="mt-3" href="#Hospitals" data-toggle="tab" role="tab">Hospitals And Clinics Need</a>
+              </li>
+             
+            </ul>
+          </div>
+  
+					<div class="row justify-content-lg-center justify-content-md-center justify-content-sm-center">
+
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<aside id="sidebar-section" class="sidebar-section clearfix">
+								<div class="widget sidebar-search">
+									<form action="#">
+										<input type="search" name="search" placeholder="Search you Courses">
+										<button type="submit"><i class="las la-search"></i></button>
+									</form>
+								</div>
+
+								
+
+							</aside>
+						</div>
+					</div>
+                    <div class="row justify-content-lg-between justify-content-md-center justify-content-sm-center mt-5">
+
+                        <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+							<aside id="sidebar-section" class="sidebar-section clearfix">
+								
+
+								<div class="widget products-category ul-li-block">
+									<h3 class="widget-title" style="color: #36415A;">Categories</h3>
+									<ul class="clearfix">
+										<li><a href="#!">Medecines</a></li>
+										<li><a href="#!">Food Supplements</a></li>
+										<li><a href="#!">Medical Equipments</a></li>
+										<li><a href="#!">Beauty and Health</a></li>
+										<li><a href="#!">Dietary Products</a></li>
+										<li><a href="#!">Kids Medecine</a></li>
+										<li><a href="#!">Kolikata Harbel</a></li>
+									</ul>
+								</div>
+
+							</aside>
+						</div>
+
+						<div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 ">
+
+							<div class="tab-content">
+                                <div id="FindPatient" class="tab-pane active">
+                                  <div class="row justify-content-center mb-70">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-3">
+                                        <div class="patient-card p-3">
+                                            <h3 style="color: #02767F;" class="fw-bold">Title Job</h3>
+                                            <h6 style="color: #5F6680;" >Cairo, Egypt</h6>
+                                            <p style="color: #02767F;">4 minutes ago</p>
+                                            <p class="badg">Full Time</p>
+                                            <p class="mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem officiis, doloremque in quaerat nesciunt molestias quis, animi tenetur illum perspiciatis repellendus saepe obcaecati eligendi quidem, minus delectus consectetur? Tempore, debitis!</p>
+                                        </div>
+                                    </div>
+                      
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-3">
+                                        <div class="patient-card p-3">
+                                            <h3 style="color: #02767F;" class="fw-bold">Title Job</h3>
+                                            <h6 style="color: #5F6680;" >Cairo, Egypt</h6>
+                                            <p style="color: #02767F;">4 minutes ago</p>
+                                            <p class="badg">Full Time</p>
+                                            <p class="mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem officiis, doloremque in quaerat nesciunt molestias quis, animi tenetur illum perspiciatis repellendus saepe obcaecati eligendi quidem, minus delectus consectetur? Tempore, debitis!</p>
+                                        </div>
+                                    </div>
+                      
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-3">
+                                        <div class="patient-card p-3">
+                                            <h3 style="color: #02767F;" class="fw-bold">Title Job</h3>
+                                            <h6 style="color: #5F6680;" >Cairo, Egypt</h6>
+                                            <p style="color: #02767F;">4 minutes ago</p>
+                                            <p class="badg">Full Time</p>
+                                            <p class="mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem officiis, doloremque in quaerat nesciunt molestias quis, animi tenetur illum perspiciatis repellendus saepe obcaecati eligendi quidem, minus delectus consectetur? Tempore, debitis!</p>
+                                        </div>
+                                    </div>
+                      
+                                  
+                                  </div>
+                                  <div class="pagination-nav ul-li-center clearfix">
+                                    <ul class="clearfix">
+                                        <li><a href="#!"><i class="las la-angle-left"></i></a></li>
+                                        <li><a href="#!">1</a></li>
+                                        <li><a href="#!">2</a></li>
+                                        <li><a href="#!">...</a></li>
+                                        <li><a href="#!">6</a></li>
+                                        <li><a href="#!"><i class="las la-angle-right"></i></a></li>
+                                    </ul>
+                                </div>
+                                </div>
+                      
+                                <div id="Hospitals" class="tab-pane fade">
+                                    <div class="row justify-content-center mb-70">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-3">
+                                            <div class="patient-card p-3">
+                                                <h3 style="color: #02767F;" class="fw-bold">Title Job</h3>
+                                                <h6 style="color: #5F6680;" >Cairo, Egypt</h6>
+                                                <p style="color: #02767F;">4 minutes ago</p>
+                                                <p class="badg">Full Time</p>
+                                                <p class="mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem officiis, doloremque in quaerat nesciunt molestias quis, animi tenetur illum perspiciatis repellendus saepe obcaecati eligendi quidem, minus delectus consectetur? Tempore, debitis!</p>
+                                            </div>
+                                        </div>
+                          
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-3">
+                                            <div class="patient-card p-3">
+                                                <h3 style="color: #02767F;" class="fw-bold">Title Job</h3>
+                                                <h6 style="color: #5F6680;" >Cairo, Egypt</h6>
+                                                <p style="color: #02767F;">4 minutes ago</p>
+                                                <p class="badg">Full Time</p>
+                                                <p class="mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem officiis, doloremque in quaerat nesciunt molestias quis, animi tenetur illum perspiciatis repellendus saepe obcaecati eligendi quidem, minus delectus consectetur? Tempore, debitis!</p>
+                                            </div>
+                                        </div>
+                          
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-3">
+                                            <div class="patient-card p-3">
+                                                <h3 style="color: #02767F;" class="fw-bold">Title Job</h3>
+                                                <h6 style="color: #5F6680;" >Cairo, Egypt</h6>
+                                                <p style="color: #02767F;">4 minutes ago</p>
+                                                <p class="badg">Full Time</p>
+                                                <p class="mt-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem officiis, doloremque in quaerat nesciunt molestias quis, animi tenetur illum perspiciatis repellendus saepe obcaecati eligendi quidem, minus delectus consectetur? Tempore, debitis!</p>
+                                            </div>
+                                        </div>
+                          
+                                      
+                                      </div>
+                                  <div class="pagination-nav ul-li-center clearfix">
+                                    <ul class="clearfix">
+                                        <li><a href="#!"><i class="las la-angle-left"></i></a></li>
+                                        <li><a href="#!">1</a></li>
+                                        <li><a href="#!">2</a></li>
+                                        <li><a href="#!">...</a></li>
+                                        <li><a href="#!">6</a></li>
+                                        <li><a href="#!"><i class="las la-angle-right"></i></a></li>
+                                    </ul>
+                                </div>
+                                </div>
+                      
+                                
+                              </div>
+						</div>
+
+						
+
+					</div>
+
+				</div>
+			</section>
+
+			<!-- product quick view - start -->
+			<div class="quickview-modal modal fade" id="quickview-modal" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content clearfix">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<div class="item-image">
+							<img src="assets/images/product/img_12.jpg" alt="image_not_found">
+						</div>
+						<div class="item-content">
+							<h2 class="item-title mb-15">Digital Infrared Thermometer</h2>
+							<div class="rating-star ul-li mb-30 clearfix">
+								<ul class="float-left mr-2">
+									<li class="active"><i class="las la-star"></i></li>
+									<li class="active"><i class="las la-star"></i></li>
+									<li class="active"><i class="las la-star"></i></li>
+									<li class="active"><i class="las la-star"></i></li>
+									<li><i class="las la-star"></i></li>
+								</ul>
+								<span class="review-text">(12 Reviews)</span>
+							</div>
+							<span class="item-price mb-15">$49.50</span>
+							<p class="mb-30">
+								Best Electronic Digital Thermometer adipiscing elit, sed do eiusmod teincididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse us ultrices gravidaes. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+							</p>
+							<div class="quantity-form mb-30 clearfix">
+								<strong class="list-title">Quantity:</strong>
+								<div class="quantity-input">
+									<form action="#">
+										<span class="input-number-decrement">–</span>
+										<input class="input-number-1" type="text" value="1">
+										<span class="input-number-increment">+</span>
+									</form>
+								</div>
+							</div>
+							<div class="btns-group ul-li mb-30">
+								<ul class="clearfix">
+									<li><a href="#!" class="btn bg-royal-blue">Add to Cart</a></li>
+									<li><a href="#!" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare Product"><i class="las la-sync"></i></a></li>
+									<li><a href="#!" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
+								</ul>
+							</div>
+							<div class="info-list ul-li-block">
+								<ul class="clearfix">
+									<li><strong class="list-title">Category:</strong> <a href="#!">Medical Equipment</a></li>
+									<li class="social-icon ul-li">
+										<strong class="list-title">Share:</strong>
+										<ul class="clearfix">
+											<li><a href="#!"><i class="lab la-facebook"></i></a></li>
+											<li><a href="#!"><i class="lab la-twitter"></i></a></li>
+											<li><a href="#!"><i class="lab la-instagram"></i></a></li>
+											<li><a href="#!"><i class="lab la-pinterest-p"></i></a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- product quick view - end -->
+			<!-- shop-section - end
+			================================================== -->
+
+
+		</main>
+		<!-- main body - end
+		================================================== -->
+
+
+		<!-- footer-section - start
+		================================================== -->
+		<footer id="footer-section" class="footer-section pb-30 mt-5 clearfix">
+			<div  class="container">
+			  <div style="background-color: #F4F8FB; border-radius: 20px 0px 20px 0px;" class="widget-area clearfix p-5">
+				<div class="row justify-content-lg-between justify-content-md-center justify-content-md-center">
+				  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+					<div class="about-content">
+					  <div class="brand-logo mb-4 clearfix">
+						<a href="index.html" class="brand-link">
+						  <img src="assets/images/colored-logo.svg" alt="logo_not_found" />
+						</a>
+					  </div>
+					  <p class="mb-30">
+						Medicia is an online medical service and medicinewooCommerce
+						theme for your ultimate online store and medical service.
+					  </p>
+					  <div class="contact-info ul-li-block clearfix">
+						<ul class="clearfix">
+						  <li>
+							<span><i class="las la-map-marked-alt"></i></span>
+							<a href="#!">
+							  16122 Collins Street West Victoria 8007 Australia
+							</a>
+						  </li>
+						  <li>
+							<span><i class="las la-envelope-open-text"></i></span>
+							<a href="#!"> yourmail@gmail.com </a>
+						  </li>
+						  <li>
+							<span><i class="las la-phone-volume"></i></span>
+							<a href="#!"> +88022 533 655 </a>
+						  </li>
+						</ul>
+					  </div>
+					</div>
+				  </div>
+		
+				  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+					<div class="useful-links ul-li-block clearfix">
+					  <h3 class="widget-title" style="color: #36415A;">Physioline</h3>
+					  <ul class="clearfix">
+						<li><a href="#!">Shop</a></li>
+						<li><a href="#!">Courses</a></li>
+						<li><a href="#!">Find a Patient</a></li>
+						<li><a href="#!">Jobs</a></li>
+						<li><a href="#!">Our System</a></li>
+					  </ul>
+					</div>
+				  </div>
+		
+				  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+					<div class="useful-links ul-li-block clearfix">
+					  <h3 class="widget-title" style="color: #36415A;">Quick Link</h3>
+					  <ul class="clearfix">
+						<li><a href="#!">Support</a></li>
+						<li><a href="#!">Tearms & Condition</a></li>
+						<li><a href="#!">Help Center</a></li>
+					  </ul>
+					</div>
+					<div class="social-icon-circle ul-li clearfix mt-5">
+					  <ul class="clearfix">
+						<li>
+						  <a href="#!"><i class="lab la-facebook-f"></i></a>
+						</li>
+						<li>
+						  <a href="#!"><i class="lab la-twitter"></i></a>
+						</li>
+						<li>
+						  <a href="#!"><i class="lab la-instagram"></i></a>
+						</li>
+						<li>
+						  <a href="#!"><i class="lab la-pinterest-p"></i></a>
+						</li>
+					  </ul>
+					</div>
+				  </div>
+		
+				  
+				</div>
+			  </div>
+		
+			  <div class="footer-bottom  text-center clearfix">
+				<p class="mb-0">
+				  ©Copyright 2020 All Rights Reserved.
+				</p>
+			   
+			  </div>
+			</div>
+		  </footer>
+		<!-- footer-section - end
+		================================================== -->
+
+		
+		<!-- jquery include -->
+		<script src="assets/js/jquery-3.4.1.min.js"></script>
+		<script src="assets/js/jquery-ui.js"></script>
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/magnific-popup.min.js"></script>
+		<script src="assets/js/owl.carousel.min.js"></script>
+		<script src="assets/js/owl.carousel2.thumbs.min.js"></script>
+		<script src="assets/js/isotope.pkgd.min.js"></script>
+		<script src="assets/js/masonry.pkgd.min.js"></script>
+		<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+		<script src="assets/js/countdown.js"></script>
+
+		<!-- google map - jquery include -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDk2HrmqE4sWSei0XdKGbOMOHN3Mm2Bf-M&ver=2.1.6"></script>
+        <script src="assets/js/gmaps.min.js"></script>
+
+		<!-- mobile menu - jquery include -->
+        <script src="assets/js/mCustomScrollbar.js"></script>
+
+		<!-- custom - jquery include -->
+		<script src="assets/js/custom.js"></script>
+
+
+	</body>
+</html>
