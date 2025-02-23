@@ -13,8 +13,7 @@ Developer:		:  Rakibul Islam Dewan
 
 - table of content - end
 ==================================================================================================== */
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;400;500;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400&display=swap');
 /* global area - start
 ==================================================================================================== */
 body {
@@ -25,7 +24,8 @@ body {
   line-height: 1.65;
   font-style: normal;
   color: #636778;
-  font-family: "Heebo", sans-serif;
+  font-family: 'Alexandria', sans-serif;
+  
   background-color: #ffffff;
   text-rendering: optimizelegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -93,7 +93,8 @@ button {
   cursor: pointer;
   display: inline-block;
   text-decoration: none;
-  font-family: "Heebo", sans-serif;
+  font-family: 'Alexandria', sans-serif;
+  
 }
 a:hover,
 button:hover {
@@ -124,11 +125,11 @@ img {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   color: #fff;
-  font-family: "Heebo", sans-serif;
+    font-family: 'Alexandria', sans-serif;
 }
 
 strong, span, small, label, i {
-  font-family: "Heebo", sans-serif;
+    font-family: 'Alexandria', sans-serif;
 }
 
 .form-item {
@@ -273,7 +274,7 @@ strong, span, small, label, i {
   font-weight: 900;
   display: inline-block;
   vertical-align: middle;
-  font-family: "Line Awesome Free";
+  font-family: 'Alexandria', sans-serif;
 }
 .select-option > button i {
   float: left;
@@ -352,7 +353,7 @@ strong, span, small, label, i {
   border-radius: 100%;
   border: 2px solid #dee3f3;
   background-color: #ffffff;
-  font-family: "Line Awesome Free";
+  font-family: 'Alexandria', sans-serif;
   transition: 0.6s cubic-bezier(0.33, 1, 0.68, 1);
 }
 .owl-theme .owl-nav .owl-next:hover,
@@ -641,7 +642,7 @@ strong, span, small, label, i {
   padding: 18px 15px;
   display: inline-block;
   text-transform: uppercase;
-  font-family: "Heebo", sans-serif;
+  font-family: 'Alexandria', sans-serif;
   transition: 0.6s cubic-bezier(0.33, 1, 0.68, 1);
 }
 .btn:before {
@@ -766,7 +767,7 @@ strong, span, small, label, i {
   color: #334eff;
   margin-bottom: 7px;
   display: inline-block;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Alexandria', sans-serif;
 }
 .section-title .title-text {
   font-size: 30px;
@@ -959,7 +960,7 @@ button {
   display: none;
 }
 .header-section .btns-group > ul > li {
-  margin-right: 30px;
+  margin-right: 15px;
   position: relative;
 }
 .header-section .btns-group > ul > li:last-child {
@@ -1015,10 +1016,18 @@ button {
 }
 .header-section .main-menu > ul > li > a {
   display: block;
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: bold;
   font-weight: 500;
   line-height: 65px;
   color: #fff;
+}
+@media(max-width:1055px){
+  .header-section .main-menu > ul > li > a {
+    
+    font-size: 14px;
+   
+  }
 }
 .header-section .main-menu > ul > li:hover > a, .header-section .main-menu > ul > li.active > a {
   color: #334eff;
@@ -1070,7 +1079,7 @@ button {
   font-weight: 900;
   position: absolute;
   transition: 0.6s cubic-bezier(0.33, 1, 0.68, 1);
-  font-family: "Line Awesome Free";
+  font-family: 'Alexandria', sans-serif;
 }
 .header-section .main-menu .menu-item-has-child:hover > a:after {
   content: "";
@@ -1657,7 +1666,7 @@ button {
   content: "";
   font-weight: 900;
   position: absolute;
-  font-family: "Line Awesome Free";
+  font-family: 'Alexandria', sans-serif;
 }
 .sidebar-menu-wrapper .sidebar-menu .menu_list > ul li.dropdown ul {
   width: 100%;
@@ -2190,7 +2199,7 @@ button {
   font-weight: 900;
   color: #334eff;
   position: absolute;
-  font-family: "Line Awesome Free";
+  font-family: 'Alexandria', sans-serif;
 }
 .offer-item .countdown-timer > ul > li {
   width: 80px;
@@ -2492,7 +2501,7 @@ button {
   font-weight: 400;
   position: absolute;
   text-align: center;
-  font-family: "Heebo", sans-serif;
+  font-family: 'Alexandria', sans-serif;
 }
 
 /* featured fullimage - end */
@@ -3644,7 +3653,7 @@ button {
   font-weight: 900;
   position: absolute;
   color: #334eff;
-  font-family: "Line Awesome Free";
+  font-family: 'Alexandria', sans-serif;
 }
 .details-section .details-content .tag-links {
   margin-top: 30px;
@@ -3767,7 +3776,7 @@ button {
   font-weight: 900;
   position: absolute;
   color: #334eff;
-  font-family: "Line Awesome Free";
+  font-family: 'Alexandria', sans-serif;
 }
 .details-section .information-area .table-wrap table {
   margin: 0px;
@@ -4340,7 +4349,8 @@ button {
 .btn-login{
   border:2px solid #fff;
   border-radius: 30px;
-  font-size: 20px !important;
+  font-size: 14px !important;
+  color: #fff !important;
 
 }
 .home-v1 .header-section .main-menu > ul > li:hover > a, .home-v1 .header-section .main-menu > ul > li.active > a {
@@ -4351,6 +4361,8 @@ button {
 }
 .btn-login:hover{
   border:2px solid #02767F;
+  color: #02767F !important;
+
 
 }
 .home-v1 .cart-dropdown .cart-items-list > ul > li .item-price {
@@ -6254,7 +6266,7 @@ button {
 }
 @media(max-width:1100px){
  .btn-login{
-  font-size: 18px !important;
+  font-size: 11px !important;
  }
 }
 
@@ -6264,28 +6276,257 @@ button {
   padding: 60px 30px;
 }
 
+.section-container {
+  position: relative;
+  margin: 60px 0;
+}
+.section-Physiotherapy{
+  margin: 60px 0;
+
+}
+.bg-case{
+background: radial-gradient(49.06% 178.95% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(4, 213, 229, 0.2) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+ border-radius: 30px;
+  padding: 60px 30px;
+  filter: blur(2px);
+  -webkit-filter: blur(4px);
+  position: relative;
+}
+
+.custom-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #02767F 0%, #04D5E5 100%);
+  color: white;
+  font-size: 18px;
+  padding: 10px 40px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  z-index: 888; 
+}
+
+.custom-button:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.custom-button::before {
+  content: "⏱";
+  margin-right: 8px;
+  font-size: 20px;
+
+}
+
+
+
 .element-Physiotherapy{
   color:#02767F;
   font-size: 48px;
 }
+.element-coures{
+  color:#06585E;
+  font-size: 32px;
+}
+.phrgraph-Physiotherapy{
+  width: 300px;
+  font-size: 22px;
+
+}
 .div-Physiotherapy{
   position: relative;
+
 }
+
 .text-Physiotherapy{
   position: absolute;
-  top: 30%;
-  right: 2%;
+  top: 20%;
+  right: 4%;
 }
 
+.img-Physiotherapy{
+  position: absolute;
+  top: -10%;
+  left: -2%;
+  width: 500px;
+  max-width: 100%;
+}
+
+
+
+@media(max-width:1020px){
+  .element-Physiotherapy{
+    font-size: 48px;
+  }
+  .element-coures{
+    font-size:42px;
+  }
+  .phrgraph-Physiotherapy{
+    width: 275px;
+    font-size: 18px;
+  
+  }
+  .img-Physiotherapy{
+    
+    top: -10%;
+    left: -2%;
+    width: 400px;
+    max-width: 100%;
+  }
+}
 @media(max-width:768px){
   .element-Physiotherapy{
-    font-size: 40px;
+    font-size: 24px;
+    margin: 0;
+  }
+  .element-coures{
+
+    font-size:16px;
+    margin: 0;
+  }
+  .phrgraph-Physiotherapy{
+    width: 160px;
+    font-size: 12px;
+  }
+  .img-Physiotherapy{
+    
+    top: -10%;
+    left: -2%;
+    width: 300px;
+    max-width: 100%;
   }
 }
-@media(max-width:685x){
+@media(max-width:575px){
+  .img-Physiotherapy{
+    
+    top: -10%;
+    left: -2%;
+    width: 200px;
+    max-width: 100%;
+  }
+}
+@media(max-width:425px){
   .element-Physiotherapy{
-    font-size: 32px;
+    font-size: 18px;
+  }
+  .element-coures{
+
+    font-size:14px;
+  }
+  .phrgraph-Physiotherapy{
+    width: 140px;
+    font-size: 12px;
+  
+  }
+  .img-Physiotherapy{
+    
+    top: -10%;
+    left: -2%;
+    width: 150px;
+    max-width: 100%;
+  }
+  
+  
+}
+
+@media(max-width:375px){
+  .element-Physiotherapy{
+    font-size: 16px;
+  }
+  .element-coures{
+
+    font-size:12px;
+  }
+  .phrgraph-Physiotherapy{
+    width: 140px;
+    font-size: 10px;
+  
   }
 }
 
 
+@media(max-width:325px){
+  .element-Physiotherapy{
+    font-size: 14px;
+  }
+  .element-coures{
+
+    font-size:10px;
+  }
+  .phrgraph-Physiotherapy{
+    width: 100px;
+    font-size: 8px;
+  
+  }
+}
+
+
+.section-PrivateCases{
+  position: relative;
+}
+.agency-list-banner{
+  position: absolute;
+  top: -5%;
+  rotate: -4deg;
+}
+.agency-list-banner2{
+  position: absolute;
+  top: 50%;
+  rotate: -4deg;
+}
+.agency-list {
+  background: linear-gradient(90deg, rgba(4, 213, 229, 0.75) 0%, rgba(2, 118, 127, 0.75) 100%);
+  padding: 20px 0px;
+  
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1750px);
+  }
+}
+ .agency-list .slider:hover .slide-track {
+  animation-play-state: paused;
+}
+ .agency-list .slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: 4200px;
+  -moz-column-gap: 50px;
+  column-gap: 50px;
+  align-items: center;
+  text-align: center;
+}
+ .agency-list .slider .slide {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+ .agency-list .slider .slide h3 {
+  margin: 0;
+  color: #e2e2e2;
+  font-size: 1.92rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+ .agency-list .slider .slide h3:hover {
+  color: #02767F;
+}
+@media(max-width:768px){
+  .agency-list-banner{
+    top: -10%;
+    rotate: -4deg;
+  }
+  .agency-list-banner2{
+    top: 75%;
+    rotate: -4deg;
+  }
+}
