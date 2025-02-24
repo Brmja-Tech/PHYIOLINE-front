@@ -16,6 +16,9 @@ Developer:		:  Rakibul Islam Dewan
 @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400&display=swap');
 /* global area - start
 ==================================================================================================== */
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0px;
   padding: 0px;
@@ -23,7 +26,7 @@ body {
   font-weight: 400;
   line-height: 1.65;
   font-style: normal;
-  color: #636778;
+  /* color: #636778; */
   font-family: 'Alexandria', sans-serif;
   
   background-color: #ffffff;
@@ -3597,8 +3600,7 @@ button {
 }
 .details-section .details-content .btns-group > ul > li > a:not(.btn):hover {
   color: #ffffff;
-  border-color: #334eff;
-  background-color: #334eff;
+background: linear-gradient(90deg, #02767F 0%, #04D5E5 100%);
 }
 .details-section .details-content .info-list > ul > li {
   margin-bottom: 10px;
@@ -6469,21 +6471,21 @@ background: radial-gradient(49.06% 178.95% at 50% 50%, rgba(255, 255, 255, 0) 0%
 
 .section-PrivateCases{
   position: relative;
+  margin: 80px 0;
 }
 .agency-list-banner{
   position: absolute;
-  top: -5%;
-  rotate: -4deg;
+  top: -16%;
+  rotate: -2deg;
 }
 .agency-list-banner2{
   position: absolute;
-  top: 50%;
-  rotate: -4deg;
+  top: 78%;
+  rotate: -2deg;
 }
 .agency-list {
   background: linear-gradient(90deg, rgba(4, 213, 229, 0.75) 0%, rgba(2, 118, 127, 0.75) 100%);
   padding: 20px 0px;
-  
 }
 @keyframes scroll {
   0% {
@@ -6520,13 +6522,55 @@ background: radial-gradient(49.06% 178.95% at 50% 50%, rgba(255, 255, 255, 0) 0%
  .agency-list .slider .slide h3:hover {
   color: #02767F;
 }
+.text-jobs{
+  color: #02767F ; font-size: 50px;
+}
+.text-PrivateCases{
+  color: #02767F ; font-size: 55px;
+}
+.phrgraph-job{
+  color: #000; font-size: 24px;
+}
+.text-about{
+  margin-left: 50px; font-size: 20px;
+}
 @media(max-width:768px){
+  .agency-list {
+    padding: 8px 0px;
+}
   .agency-list-banner{
-    top: -10%;
+    top: -20%;
     rotate: -4deg;
   }
   .agency-list-banner2{
     top: 75%;
     rotate: -4deg;
   }
+  .text-jobs{
+    font-size: 28px;
+  }
+  .phrgraph-job{
+    font-size: 18px;
+    text-align: center;
+  }
+  .text-PrivateCases{
+     font-size: 38px;
+  }
+  .phrgraph-job{
+    font-size: 18px;
+    text-align: center;
+  }
+  .text-about{
+    margin-left: 0; font-size: 18px;
+    text-align: center;
+  }
+
 }
+@media (max-width: 990px) {
+  .btn-cart, 
+  .mobile-btn-cart {
+      display: none !important;
+  }
+}
+
+
