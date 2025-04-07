@@ -16,11 +16,81 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/jquery-ui.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 
 		<!-- custom - css include -->
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<style>
+			.products-category ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+		
+			.products-category li {
+				margin-bottom: 10px;
+			}
+		
+			.products-category > ul > li > a {
+				display: block;
+				padding: 10px 14px;
+				background-color: #f5f5f5;
+				color: #36415A;
+				text-decoration: none;
+				border-radius: 4px;
+				transition: background-color 0.3s ease;
+				cursor: pointer;
+				position: relative;
+			}
+		
+			.products-category > ul > li > a:hover {
+				background-color: #e0e0e0;
+			}
+		
+			.products-category li ul {
+				display: none;
+				margin-top: 10px;
+				background-color: #fff;
+				padding: 5px 0;
+				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+				border-radius: 6px;
+				transition: all 0.3s ease;
+			}
+		
+			.products-category li ul li {
+				padding: 0;
+			}
+		
+			.products-category li ul a {
+				display: block;
+				padding: 8px 16px;
+				color: #36415A;
+				text-decoration: none;
+				background-color: transparent;
+				transition: background-color 0.3s;
+			}
+		
+			.products-category li ul a:hover {
+				background-color: #f0f0f0;
+			}
+		
+			.products-category li.open > ul {
+				display: block;
+			}
 
+			.products-category > ul > li > a::after {
+    content: "▼";
+    float: right;
+    transition: transform 0.3s ease;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.products-category li.open > a::after {
+    transform: rotate(-180deg); 
+}
+		</style>
 	</head>
 
 
@@ -350,6 +420,18 @@
 			<!-- breadcrumb-section - end
 			================================================== -->
 
+			<section class="mt-5">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="col-md-12">
+							<div class="d-flex justify-content-between align-items-center border-promotion">
+								<span class="main-color promotion-text ">Join as a Supplier</span>
+								<button class="main-color border-btn px-5 py-2 mx-3">Join</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
 			<!-- shop-section - start
 			================================================== -->
@@ -369,13 +451,62 @@
 								<div class="widget products-category ul-li-block">
 									<h3 class="widget-title" style="color: #36415A;">Categories</h3>
 									<ul class="clearfix">
-										<li><a href="#!">Medecines</a></li>
-										<li><a href="#!">Food Supplements</a></li>
-										<li><a href="#!">Medical Equipments</a></li>
-										<li><a href="#!">Beauty and Health</a></li>
-										<li><a href="#!">Dietary Products</a></li>
-										<li><a href="#!">Kids Medecine</a></li>
-										<li><a href="#!">Kolikata Harbel</a></li>
+										<li>
+											<a href="javascript:void(0)">Medecines</a>
+											<ul>
+												<li><a href="#!">Pain Relief</a></li>
+												<li><a href="#!">Cold & Flu</a></li>
+												<li><a href="#!">Antibiotics</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:void(0)">Food Supplements</a>
+											<ul>
+												<li><a href="#!">Vitamins</a></li>
+												<li><a href="#!">Proteins</a></li>
+												<li><a href="#!">Minerals</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:void(0)">Medical Equipments</a>
+											<ul>
+												<li><a href="#!">Blood Pressure Monitor</a></li>
+												<li><a href="#!">Thermometers</a></li>
+												<li><a href="#!">Oxygen Supplies</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:void(0)">Beauty and Health</a>
+											<ul>
+												<li><a href="#!">Skin Care</a></li>
+												<li><a href="#!">Hair Care</a></li>
+												<li><a href="#!">Personal Hygiene</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:void(0)">Dietary Products</a>
+											<ul>
+												<li><a href="#!">Keto</a></li>
+												<li><a href="#!">Low Carb</a></li>
+												<li><a href="#!">Gluten Free</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:void(0)">Kids Medecine</a>
+											<ul>
+												<li><a href="#!">Cough & Cold</a></li>
+												<li><a href="#!">Vitamins for Kids</a></li>
+												<li><a href="#!">Allergy Relief</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="javascript:void(0)">Kolikata Harbel</a>
+											<ul>
+												<li><a href="#!">Herbal Oils</a></li>
+												<li><a href="#!">Herbal Powders</a></li>
+												<li><a href="#!">Natural Remedies</a></li>
+											</ul>
+										</li>
 									</ul>
 								</div>
 
@@ -389,21 +520,21 @@
 											<ul class="nav" role="tablist">
 												<li>
 													<a class="active" data-toggle="tab" href="#column-3-tab">
-														<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="000000">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16" fill="000000">
 															<path id="_3_Grid" data-name="3 Grid" class="cls-1" d="M675,571h3.812v3.812H675V571Zm0,6.094h3.812v3.812H675v-3.812Zm0,6.093h3.812V587H675v-3.813ZM681.094,571h3.812v3.812h-3.812V571Zm0,6.094h3.812v3.812h-3.812v-3.812Zm0,6.093h3.812V587h-3.812v-3.813ZM687.188,571H691v3.812h-3.812V571Zm0,6.094H691v3.812h-3.812v-3.812Zm0,6.093H691V587h-3.812v-3.813Z" transform="translate(-675 -571)"/>
 														</svg>
 													</a>
 												</li>
 												<li>
 													<a data-toggle="tab" href="#column-2-tab">
-														<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="000000">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16" fill="000000">
 															<path id="_2_Grid" data-name="2 Grid" class="cls-1" d="M707,580h7v7h-7v-7Zm10,1h6v6h-6v-6Zm-10-10h7v7h-7v-7Zm9,9h7v7h-7v-7Zm1-9h6v6h-6v-6Zm-1,0h7v7h-7v-7Z" transform="translate(-707 -571)"/>
 														</svg>
 													</a>
 												</li>
 												<li>
 													<a data-toggle="tab" href="#list-layout-tab">
-														<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="000000">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16" fill="000000">
 															<path id="_1_Grid" data-name="1 Grid" class="cls-1" d="M738,571h4v4h-4v-4Zm0,6h4v4h-4v-4Zm0,6h4v4h-4v-4Zm6-12h10v4H744v-4Zm0,6h10v4H744v-4Zm0,6h10v4H744v-4Z" transform="translate(-738 -571)"/>
 														</svg>
 													</a>
@@ -439,23 +570,40 @@
 										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 											<div class="product-grid text-center clearfix">
 												<div class="item-image">
-													<a href="shop-details-1.html" class="image-wrap">
-														<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image_not_found">
-													</a>
+													<!-- Swiper -->
+													<div class="swiper mySwiper">
+														<div class="swiper-wrapper">
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<!-- Add more slides as needed -->
+														</div>
+														<!-- Optional navigation -->
+
+														<div class="swiper-pagination"></div>
+													</div>
+											
 													<div class="post-label ul-li-right clearfix">
 														<ul class="clearfix">
 															<li class="bg-skyblue">-19%</li>
 															<li class="bg-skyblue">TOP</li>
 														</ul>
 													</div>
+											
 													<div class="btns-group ul-li-center clearfix">
 														<ul class="clearfix">
 															<li><a href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
-															
 															<li><a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
 														</ul>
 													</div>
 												</div>
+											
 												<div class="item-content">
 													<h3 class="item-title">
 														<a href="shop-details-1.html">Digital Infrared Thermometer</a>
@@ -472,381 +620,49 @@
 													</div>
 												</div>
 											</div>
+											
 										</div>
 
 										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 											<div class="product-grid text-center clearfix">
 												<div class="item-image">
-													<a href="shop-details-1.html" class="image-wrap">
-														<img src="assets/images/img_4.jpg.svg" alt="image_not_found">
-													</a>
-													<div class="btns-group ul-li-center clearfix">
-														<ul class="clearfix">
-															<li><a href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
-															
-															<li><a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
-														</ul>
-													</div>
-												</div>
-												<div class="item-content">
-													<h3 class="item-title">
-														<a href="shop-details-1.html">Clinical Stethoscope Dual Head</a>
-													</h3>
-													<span class="item-price">$39.50</span>
-													<div class="rating-star ul-li-center clearfix">
-														<ul class="clearfix">
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li><i class="las la-star"></i></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</div>
+													<!-- Swiper -->
+													<div class="swiper mySwiper">
+														<div class="swiper-wrapper">
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<!-- Add more slides as needed -->
+														</div>
+														<!-- Optional navigation -->
 
-										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-											<div class="product-grid text-center clearfix">
-												<div class="item-image">
-													<a href="shop-details-1.html" class="image-wrap">
-														<img src="assets/images/img_6.jpg.svg" alt="image_not_found">
-													</a>
-													<div class="post-label ul-li-right clearfix">
-														<ul class="clearfix">
-															<li class="bg-skyblue">-30%</li>
-														</ul>
+														<div class="swiper-pagination"></div>
 													</div>
-													<div class="btns-group ul-li-center clearfix">
-														<ul class="clearfix">
-															<li><a href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
-															
-															<li><a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
-														</ul>
-													</div>
-												</div>
-												<div class="item-content">
-													<h3 class="item-title">
-														<a href="shop-details-1.html">Digital Thermometer</a>
-													</h3>
-													<span class="item-price">$39.50</span>
-													<div class="rating-star ul-li-center clearfix">
-														<ul class="clearfix">
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li><i class="las la-star"></i></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-											<div class="product-grid text-center clearfix">
-												<div class="item-image">
-													<a href="shop-details-1.html" class="image-wrap">
-														<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image_not_found">
-													</a>
-													<div class="post-label ul-li-right clearfix">
-														<ul class="clearfix">
-															<li class="bg-skyblue">-19%</li>
-														</ul>
-													</div>
-													<div class="btns-group ul-li-center clearfix">
-														<ul class="clearfix">
-															<li><a href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
-															
-															<li><a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
-														</ul>
-													</div>
-												</div>
-												<div class="item-content">
-													<h3 class="item-title">
-														<a href="shop-details-1.html">First Medicine Aid Kit</a>
-													</h3>
-													<span class="item-price">$29.50</span>
-													<div class="rating-star ul-li-center clearfix">
-														<ul class="clearfix">
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li><i class="las la-star"></i></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-											<div class="product-grid text-center clearfix">
-												<div class="item-image">
-													<a href="shop-details-1.html" class="image-wrap">
-														<img src="assets/images/img_4.jpg.svg" alt="image_not_found">
-													</a>
-													<div class="post-label ul-li-right clearfix">
-														<ul class="clearfix">
-															<li class="bg-skyblue">-20%</li>
-														</ul>
-													</div>
-													<div class="btns-group ul-li-center clearfix">
-														<ul class="clearfix">
-															<li><a href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
-															
-															<li><a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
-														</ul>
-													</div>
-												</div>
-												<div class="item-content">
-													<h3 class="item-title">
-														<a href="shop-details-1.html">Digital Blood Pressure Machine</a>
-													</h3>
-													<span class="item-price">$39.00</span>
-													<div class="rating-star ul-li-center clearfix">
-														<ul class="clearfix">
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li><i class="las la-star"></i></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-											<div class="product-grid text-center clearfix">
-												<div class="item-image">
-													<a href="shop-details-1.html" class="image-wrap">
-														<img src="assets/images/img_6.jpg.svg" alt="image_not_found">
-													</a>
-													<div class="btns-group ul-li-center clearfix">
-														<ul class="clearfix">
-															<li><a href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
-															
-															<li><a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
-														</ul>
-													</div>
-												</div>
-												<div class="item-content">
-													<h3 class="item-title">
-														<a href="shop-details-1.html">Surgical Face Mask</a>
-													</h3>
-													<span class="item-price">$39.00</span>
-													<div class="rating-star ul-li-center clearfix">
-														<ul class="clearfix">
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li><i class="las la-star"></i></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-											<div class="product-grid text-center clearfix">
-												<div class="item-image">
-													<a href="shop-details-1.html" class="image-wrap">
-														<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image_not_found">
-													</a>
-													<div class="btns-group ul-li-center clearfix">
-														<ul class="clearfix">
-															<li><a href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
-															
-															<li><a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
-														</ul>
-													</div>
-												</div>
-												<div class="item-content">
-													<h3 class="item-title">
-														<a href="shop-details-1.html">Aloevera Food Supliment</a>
-													</h3>
-													<span class="item-price">$39.50</span>
-													<div class="rating-star ul-li-center clearfix">
-														<ul class="clearfix">
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li><i class="las la-star"></i></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-											<div class="product-grid text-center clearfix">
-												<div class="item-image">
-													<a href="shop-details-1.html" class="image-wrap">
-														<img src="assets/images/img_4.jpg.svg" alt="image_not_found">
-													</a>
-													<div class="post-label ul-li clearfix">
-														<ul class="clearfix">
-															<li class="bg-skyblue">SALE</li>
-														</ul>
-													</div>
-													<div class="btns-group ul-li-center clearfix">
-														<ul class="clearfix">
-															<li><a href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
-															
-															<li><a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
-														</ul>
-													</div>
-												</div>
-												<div class="item-content">
-													<h3 class="item-title">
-														<a href="shop-details-1.html">Digital Temparature meter</a>
-													</h3>
-													<span class="item-price">$39.50</span>
-													<div class="rating-star ul-li-center clearfix">
-														<ul class="clearfix">
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li><i class="las la-star"></i></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-											<div class="product-grid text-center clearfix">
-												<div class="item-image">
-													<a href="shop-details-1.html" class="image-wrap">
-														<img src="assets/images/img_6.jpg.svg" alt="image_not_found">
-													</a>
-													<div class="post-label ul-li-right clearfix">
-														<ul class="clearfix">
-															<li class="bg-skyblue">-30%</li>
-														</ul>
-													</div>
-													<div class="btns-group ul-li-center clearfix">
-														<ul class="clearfix">
-															<li><a href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
-															
-															<li><a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
-														</ul>
-													</div>
-												</div>
-												<div class="item-content">
-													<h3 class="item-title">
-														<a href="shop-details-1.html">Digital Thermometer</a>
-													</h3>
-													<span class="item-price">$39.50</span>
-													<div class="rating-star ul-li-center clearfix">
-														<ul class="clearfix">
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li><i class="las la-star"></i></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-											<div class="product-grid text-center clearfix">
-												<div class="item-image">
-													<a href="shop-details-1.html" class="image-wrap">
-														<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image_not_found">
-													</a>
-													<div class="post-label ul-li-right clearfix">
-														<ul class="clearfix">
-															<li class="bg-skyblue">-20%</li>
-														</ul>
-													</div>
-													<div class="btns-group ul-li-center clearfix">
-														<ul class="clearfix">
-															<li><a href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
-															
-															<li><a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
-														</ul>
-													</div>
-												</div>
-												<div class="item-content">
-													<h3 class="item-title">
-														<a href="shop-details-1.html">Digital Temparature meter</a>
-													</h3>
-													<span class="item-price">$39.00</span>
-													<div class="rating-star ul-li-center clearfix">
-														<ul class="clearfix">
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li><i class="las la-star"></i></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-											<div class="product-grid text-center clearfix">
-												<div class="item-image">
-													<a href="shop-details-1.html" class="image-wrap">
-														<img src="assets/images/img_4.jpg.svg" alt="image_not_found">
-													</a>
-													<div class="btns-group ul-li-center clearfix">
-														<ul class="clearfix">
-															<li><a href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
-															
-															<li><a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
-														</ul>
-													</div>
-												</div>
-												<div class="item-content">
-													<h3 class="item-title">
-														<a href="shop-details-1.html">First Medicine Aid Kit</a>
-													</h3>
-													<span class="item-price">$29.50</span>
-													<div class="rating-star ul-li-center clearfix">
-														<ul class="clearfix">
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li><i class="las la-star"></i></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-											<div class="product-grid text-center clearfix">
-												<div class="item-image">
-													<a href="shop-details-1.html" class="image-wrap">
-														<img src="assets/images/img_6.jpg.svg" alt="image_not_found">
-													</a>
+											
 													<div class="post-label ul-li-right clearfix">
 														<ul class="clearfix">
 															<li class="bg-skyblue">-19%</li>
 															<li class="bg-skyblue">TOP</li>
 														</ul>
 													</div>
+											
 													<div class="btns-group ul-li-center clearfix">
 														<ul class="clearfix">
 															<li><a href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
-															
 															<li><a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
 														</ul>
 													</div>
 												</div>
+											
 												<div class="item-content">
 													<h3 class="item-title">
-														<a href="shop-details-1.html">Surgical Hand Gloves</a>
+														<a href="shop-details-1.html">Digital Infrared Thermometer</a>
 													</h3>
 													<span class="item-price">$49.50</span>
 													<div class="rating-star ul-li-center clearfix">
@@ -860,6 +676,722 @@
 													</div>
 												</div>
 											</div>
+											
+										</div>
+										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+											<div class="product-grid text-center clearfix">
+												<div class="item-image">
+													<!-- Swiper -->
+													<div class="swiper mySwiper">
+														<div class="swiper-wrapper">
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<!-- Add more slides as needed -->
+														</div>
+														<!-- Optional navigation -->
+
+														<div class="swiper-pagination"></div>
+													</div>
+											
+													<div class="post-label ul-li-right clearfix">
+														<ul class="clearfix">
+															<li class="bg-skyblue">-19%</li>
+															<li class="bg-skyblue">TOP</li>
+														</ul>
+													</div>
+											
+													<div class="btns-group ul-li-center clearfix">
+														<ul class="clearfix">
+															<li><a href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
+															<li><a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
+														</ul>
+													</div>
+												</div>
+											
+												<div class="item-content">
+													<h3 class="item-title">
+														<a href="shop-details-1.html">Digital Infrared Thermometer</a>
+													</h3>
+													<span class="item-price">$49.50</span>
+													<div class="rating-star ul-li-center clearfix">
+														<ul class="clearfix">
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li><i class="las la-star"></i></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											
+										</div>
+
+										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+											<div class="product-grid text-center clearfix">
+												<div class="item-image">
+													<!-- Swiper -->
+													<div class="swiper mySwiper">
+														<div class="swiper-wrapper">
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<!-- Add more slides as needed -->
+														</div>
+														<!-- Optional navigation -->
+
+														<div class="swiper-pagination"></div>
+													</div>
+											
+													<div class="post-label ul-li-right clearfix">
+														<ul class="clearfix">
+															<li class="bg-skyblue">-19%</li>
+															<li class="bg-skyblue">TOP</li>
+														</ul>
+													</div>
+											
+													<div class="btns-group ul-li-center clearfix">
+														<ul class="clearfix">
+															<li><a href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
+															<li><a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
+														</ul>
+													</div>
+												</div>
+											
+												<div class="item-content">
+													<h3 class="item-title">
+														<a href="shop-details-1.html">Digital Infrared Thermometer</a>
+													</h3>
+													<span class="item-price">$49.50</span>
+													<div class="rating-star ul-li-center clearfix">
+														<ul class="clearfix">
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li><i class="las la-star"></i></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											
+										</div>
+										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+											<div class="product-grid text-center clearfix">
+												<div class="item-image">
+													<!-- Swiper -->
+													<div class="swiper mySwiper">
+														<div class="swiper-wrapper">
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<!-- Add more slides as needed -->
+														</div>
+														<!-- Optional navigation -->
+
+														<div class="swiper-pagination"></div>
+													</div>
+											
+													<div class="post-label ul-li-right clearfix">
+														<ul class="clearfix">
+															<li class="bg-skyblue">-19%</li>
+															<li class="bg-skyblue">TOP</li>
+														</ul>
+													</div>
+											
+													<div class="btns-group ul-li-center clearfix">
+														<ul class="clearfix">
+															<li><a href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
+															<li><a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
+														</ul>
+													</div>
+												</div>
+											
+												<div class="item-content">
+													<h3 class="item-title">
+														<a href="shop-details-1.html">Digital Infrared Thermometer</a>
+													</h3>
+													<span class="item-price">$49.50</span>
+													<div class="rating-star ul-li-center clearfix">
+														<ul class="clearfix">
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li><i class="las la-star"></i></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											
+										</div>
+										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+											<div class="product-grid text-center clearfix">
+												<div class="item-image">
+													<!-- Swiper -->
+													<div class="swiper mySwiper">
+														<div class="swiper-wrapper">
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<!-- Add more slides as needed -->
+														</div>
+														<!-- Optional navigation -->
+
+														<div class="swiper-pagination"></div>
+													</div>
+											
+													<div class="post-label ul-li-right clearfix">
+														<ul class="clearfix">
+															<li class="bg-skyblue">-19%</li>
+															<li class="bg-skyblue">TOP</li>
+														</ul>
+													</div>
+											
+													<div class="btns-group ul-li-center clearfix">
+														<ul class="clearfix">
+															<li><a href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
+															<li><a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
+														</ul>
+													</div>
+												</div>
+											
+												<div class="item-content">
+													<h3 class="item-title">
+														<a href="shop-details-1.html">Digital Infrared Thermometer</a>
+													</h3>
+													<span class="item-price">$49.50</span>
+													<div class="rating-star ul-li-center clearfix">
+														<ul class="clearfix">
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li><i class="las la-star"></i></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											
+										</div>
+										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+											<div class="product-grid text-center clearfix">
+												<div class="item-image">
+													<!-- Swiper -->
+													<div class="swiper mySwiper">
+														<div class="swiper-wrapper">
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<!-- Add more slides as needed -->
+														</div>
+													
+														<div class="swiper-pagination"></div>
+													</div>
+											
+													<div class="post-label ul-li-right clearfix">
+														<ul class="clearfix">
+															<li class="bg-skyblue">-19%</li>
+															<li class="bg-skyblue">TOP</li>
+														</ul>
+													</div>
+											
+													<div class="btns-group ul-li-center clearfix">
+														<ul class="clearfix">
+															<li><a href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
+															<li><a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
+														</ul>
+													</div>
+												</div>
+											
+												<div class="item-content">
+													<h3 class="item-title">
+														<a href="shop-details-1.html">Digital Infrared Thermometer</a>
+													</h3>
+													<span class="item-price">$49.50</span>
+													<div class="rating-star ul-li-center clearfix">
+														<ul class="clearfix">
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li><i class="las la-star"></i></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											
+										</div>
+										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+											<div class="product-grid text-center clearfix">
+												<div class="item-image">
+													<!-- Swiper -->
+													<div class="swiper mySwiper">
+														<div class="swiper-wrapper">
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<!-- Add more slides as needed -->
+														</div>
+														<!-- Optional navigation -->
+
+														<div class="swiper-pagination"></div>
+													</div>
+											
+													<div class="post-label ul-li-right clearfix">
+														<ul class="clearfix">
+															<li class="bg-skyblue">-19%</li>
+															<li class="bg-skyblue">TOP</li>
+														</ul>
+													</div>
+											
+													<div class="btns-group ul-li-center clearfix">
+														<ul class="clearfix">
+															<li><a href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
+															<li><a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
+														</ul>
+													</div>
+												</div>
+											
+												<div class="item-content">
+													<h3 class="item-title">
+														<a href="shop-details-1.html">Digital Infrared Thermometer</a>
+													</h3>
+													<span class="item-price">$49.50</span>
+													<div class="rating-star ul-li-center clearfix">
+														<ul class="clearfix">
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li><i class="las la-star"></i></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											
+										</div>
+										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+											<div class="product-grid text-center clearfix">
+												<div class="item-image">
+													<!-- Swiper -->
+													<div class="swiper mySwiper">
+														<div class="swiper-wrapper">
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<!-- Add more slides as needed -->
+														</div>
+														<!-- Optional navigation -->
+
+														<div class="swiper-pagination"></div>
+													</div>
+											
+													<div class="post-label ul-li-right clearfix">
+														<ul class="clearfix">
+															<li class="bg-skyblue">-19%</li>
+															<li class="bg-skyblue">TOP</li>
+														</ul>
+													</div>
+											
+													<div class="btns-group ul-li-center clearfix">
+														<ul class="clearfix">
+															<li><a href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
+															<li><a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
+														</ul>
+													</div>
+												</div>
+											
+												<div class="item-content">
+													<h3 class="item-title">
+														<a href="shop-details-1.html">Digital Infrared Thermometer</a>
+													</h3>
+													<span class="item-price">$49.50</span>
+													<div class="rating-star ul-li-center clearfix">
+														<ul class="clearfix">
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li><i class="las la-star"></i></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											
+										</div>
+										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+											<div class="product-grid text-center clearfix">
+												<div class="item-image">
+													<!-- Swiper -->
+													<div class="swiper mySwiper">
+														<div class="swiper-wrapper">
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<!-- Add more slides as needed -->
+														</div>
+														<!-- Optional navigation -->
+
+														<div class="swiper-pagination"></div>
+													</div>
+											
+													<div class="post-label ul-li-right clearfix">
+														<ul class="clearfix">
+															<li class="bg-skyblue">-19%</li>
+															<li class="bg-skyblue">TOP</li>
+														</ul>
+													</div>
+											
+													<div class="btns-group ul-li-center clearfix">
+														<ul class="clearfix">
+															<li><a href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
+															<li><a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
+														</ul>
+													</div>
+												</div>
+											
+												<div class="item-content">
+													<h3 class="item-title">
+														<a href="shop-details-1.html">Digital Infrared Thermometer</a>
+													</h3>
+													<span class="item-price">$49.50</span>
+													<div class="rating-star ul-li-center clearfix">
+														<ul class="clearfix">
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li><i class="las la-star"></i></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											
+										</div>
+										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+											<div class="product-grid text-center clearfix">
+												<div class="item-image">
+													<!-- Swiper -->
+													<div class="swiper mySwiper">
+														<div class="swiper-wrapper">
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<!-- Add more slides as needed -->
+														</div>
+														<!-- Optional navigation -->
+
+														<div class="swiper-pagination"></div>
+													</div>
+											
+													<div class="post-label ul-li-right clearfix">
+														<ul class="clearfix">
+															<li class="bg-skyblue">-19%</li>
+															<li class="bg-skyblue">TOP</li>
+														</ul>
+													</div>
+											
+													<div class="btns-group ul-li-center clearfix">
+														<ul class="clearfix">
+															<li><a href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
+															<li><a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
+														</ul>
+													</div>
+												</div>
+											
+												<div class="item-content">
+													<h3 class="item-title">
+														<a href="shop-details-1.html">Digital Infrared Thermometer</a>
+													</h3>
+													<span class="item-price">$49.50</span>
+													<div class="rating-star ul-li-center clearfix">
+														<ul class="clearfix">
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li><i class="las la-star"></i></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											
+										</div>
+										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+											<div class="product-grid text-center clearfix">
+												<div class="item-image">
+													<!-- Swiper -->
+													<div class="swiper mySwiper">
+														<div class="swiper-wrapper">
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<!-- Add more slides as needed -->
+														</div>
+														<!-- Optional navigation -->
+
+														<div class="swiper-pagination"></div>
+													</div>
+											
+													<div class="post-label ul-li-right clearfix">
+														<ul class="clearfix">
+															<li class="bg-skyblue">-19%</li>
+															<li class="bg-skyblue">TOP</li>
+														</ul>
+													</div>
+											
+													<div class="btns-group ul-li-center clearfix">
+														<ul class="clearfix">
+															<li><a href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
+															<li><a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
+														</ul>
+													</div>
+												</div>
+											
+												<div class="item-content">
+													<h3 class="item-title">
+														<a href="shop-details-1.html">Digital Infrared Thermometer</a>
+													</h3>
+													<span class="item-price">$49.50</span>
+													<div class="rating-star ul-li-center clearfix">
+														<ul class="clearfix">
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li><i class="las la-star"></i></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											
+										</div>
+										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+											<div class="product-grid text-center clearfix">
+												<div class="item-image">
+													<!-- Swiper -->
+													<div class="swiper mySwiper">
+														<div class="swiper-wrapper">
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<!-- Add more slides as needed -->
+														</div>
+														<!-- Optional navigation -->
+
+														<div class="swiper-pagination"></div>
+													</div>
+											
+													<div class="post-label ul-li-right clearfix">
+														<ul class="clearfix">
+															<li class="bg-skyblue">-19%</li>
+															<li class="bg-skyblue">TOP</li>
+														</ul>
+													</div>
+											
+													<div class="btns-group ul-li-center clearfix">
+														<ul class="clearfix">
+															<li><a href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
+															<li><a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
+														</ul>
+													</div>
+												</div>
+											
+												<div class="item-content">
+													<h3 class="item-title">
+														<a href="shop-details-1.html">Digital Infrared Thermometer</a>
+													</h3>
+													<span class="item-price">$49.50</span>
+													<div class="rating-star ul-li-center clearfix">
+														<ul class="clearfix">
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li><i class="las la-star"></i></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											
+										</div> 
+										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+											<div class="product-grid text-center clearfix">
+												<div class="item-image">
+													<!-- Swiper -->
+													<div class="swiper mySwiper">
+														<div class="swiper-wrapper">
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<!-- Add more slides as needed -->
+														</div>
+														<!-- Optional navigation -->
+
+														<div class="swiper-pagination"></div>
+													</div>
+											
+													<div class="post-label ul-li-right clearfix">
+														<ul class="clearfix">
+															<li class="bg-skyblue">-19%</li>
+															<li class="bg-skyblue">TOP</li>
+														</ul>
+													</div>
+											
+													<div class="btns-group ul-li-center clearfix">
+														<ul class="clearfix">
+															<li><a href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
+															<li><a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
+														</ul>
+													</div>
+												</div>
+											
+												<div class="item-content">
+													<h3 class="item-title">
+														<a href="shop-details-1.html">Digital Infrared Thermometer</a>
+													</h3>
+													<span class="item-price">$49.50</span>
+													<div class="rating-star ul-li-center clearfix">
+														<ul class="clearfix">
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li><i class="las la-star"></i></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											
+										</div>
+										<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+											<div class="product-grid text-center clearfix">
+												<div class="item-image">
+													<!-- Swiper -->
+													<div class="swiper mySwiper">
+														<div class="swiper-wrapper">
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/API_4778-INT_CH-2201-TRANSPORT2-PRD-WHITE-FRONT_DETAIL_ON_CART-T0001_1 1.svg" alt="image1">
+															</div>
+															<!-- Add more slides as needed -->
+														</div>
+														<!-- Optional navigation -->
+
+														<div class="swiper-pagination"></div>
+													</div>
+											
+													<div class="post-label ul-li-right clearfix">
+														<ul class="clearfix">
+															<li class="bg-skyblue">-19%</li>
+															<li class="bg-skyblue">TOP</li>
+														</ul>
+													</div>
+											
+													<div class="btns-group ul-li-center clearfix">
+														<ul class="clearfix">
+															<li><a href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
+															<li><a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
+														</ul>
+													</div>
+												</div>
+											
+												<div class="item-content">
+													<h3 class="item-title">
+														<a href="shop-details-1.html">Digital Infrared Thermometer</a>
+													</h3>
+													<span class="item-price">$49.50</span>
+													<div class="rating-star ul-li-center clearfix">
+														<ul class="clearfix">
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li><i class="las la-star"></i></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											
 										</div>
 									</div>
 
@@ -880,23 +1412,258 @@
 										<div class="col-lg-6 col-md-4 col-sm-6 col-xs-12">
 											<div class="product-grid text-center clearfix">
 												<div class="item-image">
-													<a href="shop-details-1.html" class="image-wrap">
-														<img src="assets/images/product/img_12.jpg" alt="image_not_found">
-													</a>
+													<!-- Swiper -->
+													<div class="swiper mySwiper">
+														<div class="swiper-wrapper">
+															<div class="swiper-slide">
+																<img src="assets/images/product/img_12.jpg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/product/img_12.jpg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/product/img_12.jpg" alt="image1">
+															</div>
+															<!-- Add more slides as needed -->
+														</div>
+														<!-- Optional navigation -->
+
+														<div class="swiper-pagination"></div>
+													</div>
+										
 													<div class="post-label ul-li-right clearfix">
 														<ul class="clearfix">
 															<li class="bg-skyblue">-19%</li>
 															<li class="bg-skyblue">TOP</li>
 														</ul>
 													</div>
+										
 													<div class="btns-group ul-li-center clearfix">
 														<ul class="clearfix">
 															<li><a href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
-															
 															<li><a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
 														</ul>
 													</div>
 												</div>
+										
+												<div class="item-content">
+													<h3 class="item-title">
+														<a href="shop-details-1.html">Digital Infrared Thermometer</a>
+													</h3>
+													<span class="item-price">$49.50</span>
+													<div class="rating-star ul-li-center clearfix">
+														<ul class="clearfix">
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li><i class="las la-star"></i></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+
+										<div class="col-lg-6 col-md-4 col-sm-6 col-xs-12">
+											<div class="product-grid text-center clearfix">
+												<div class="item-image">
+													<!-- Swiper -->
+													<div class="swiper mySwiper">
+														<div class="swiper-wrapper">
+															<div class="swiper-slide">
+																<img src="assets/images/product/img_12.jpg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/product/img_12.jpg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/product/img_12.jpg" alt="image1">
+															</div>
+															<!-- Add more slides as needed -->
+														</div>
+														<!-- Optional navigation -->
+
+														<div class="swiper-pagination"></div>
+													</div>
+										
+													<div class="post-label ul-li-right clearfix">
+														<ul class="clearfix">
+															<li class="bg-skyblue">-19%</li>
+															<li class="bg-skyblue">TOP</li>
+														</ul>
+													</div>
+										
+													<div class="btns-group ul-li-center clearfix">
+														<ul class="clearfix">
+															<li><a href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
+															<li><a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
+														</ul>
+													</div>
+												</div>
+										
+												<div class="item-content">
+													<h3 class="item-title">
+														<a href="shop-details-1.html">Digital Infrared Thermometer</a>
+													</h3>
+													<span class="item-price">$49.50</span>
+													<div class="rating-star ul-li-center clearfix">
+														<ul class="clearfix">
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li><i class="las la-star"></i></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-4 col-sm-6 col-xs-12">
+											<div class="product-grid text-center clearfix">
+												<div class="item-image">
+													<!-- Swiper -->
+													<div class="swiper mySwiper">
+														<div class="swiper-wrapper">
+															<div class="swiper-slide">
+																<img src="assets/images/product/img_12.jpg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/product/img_12.jpg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/product/img_12.jpg" alt="image1">
+															</div>
+															<!-- Add more slides as needed -->
+														</div>
+														<!-- Optional navigation -->
+
+														<div class="swiper-pagination"></div>
+													</div>
+										
+													<div class="post-label ul-li-right clearfix">
+														<ul class="clearfix">
+															<li class="bg-skyblue">-19%</li>
+															<li class="bg-skyblue">TOP</li>
+														</ul>
+													</div>
+										
+													<div class="btns-group ul-li-center clearfix">
+														<ul class="clearfix">
+															<li><a href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
+															<li><a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
+														</ul>
+													</div>
+												</div>
+										
+												<div class="item-content">
+													<h3 class="item-title">
+														<a href="shop-details-1.html">Digital Infrared Thermometer</a>
+													</h3>
+													<span class="item-price">$49.50</span>
+													<div class="rating-star ul-li-center clearfix">
+														<ul class="clearfix">
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li><i class="las la-star"></i></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-4 col-sm-6 col-xs-12">
+											<div class="product-grid text-center clearfix">
+												<div class="item-image">
+													<!-- Swiper -->
+													<div class="swiper mySwiper">
+														<div class="swiper-wrapper">
+															<div class="swiper-slide">
+																<img src="assets/images/product/img_12.jpg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/product/img_12.jpg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/product/img_12.jpg" alt="image1">
+															</div>
+															<!-- Add more slides as needed -->
+														</div>
+														<!-- Optional navigation -->
+
+														<div class="swiper-pagination"></div>
+													</div>
+										
+													<div class="post-label ul-li-right clearfix">
+														<ul class="clearfix">
+															<li class="bg-skyblue">-19%</li>
+															<li class="bg-skyblue">TOP</li>
+														</ul>
+													</div>
+										
+													<div class="btns-group ul-li-center clearfix">
+														<ul class="clearfix">
+															<li><a href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
+															<li><a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
+														</ul>
+													</div>
+												</div>
+										
+												<div class="item-content">
+													<h3 class="item-title">
+														<a href="shop-details-1.html">Digital Infrared Thermometer</a>
+													</h3>
+													<span class="item-price">$49.50</span>
+													<div class="rating-star ul-li-center clearfix">
+														<ul class="clearfix">
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li class="active"><i class="las la-star"></i></li>
+															<li><i class="las la-star"></i></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-6 col-md-4 col-sm-6 col-xs-12">
+											<div class="product-grid text-center clearfix">
+												<div class="item-image">
+													<!-- Swiper -->
+													<div class="swiper mySwiper">
+														<div class="swiper-wrapper">
+															<div class="swiper-slide">
+																<img src="assets/images/product/img_12.jpg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/product/img_12.jpg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/product/img_12.jpg" alt="image1">
+															</div>
+															<!-- Add more slides as needed -->
+														</div>
+														<!-- Optional navigation -->
+
+														<div class="swiper-pagination"></div>
+													</div>
+										
+													<div class="post-label ul-li-right clearfix">
+														<ul class="clearfix">
+															<li class="bg-skyblue">-19%</li>
+															<li class="bg-skyblue">TOP</li>
+														</ul>
+													</div>
+										
+													<div class="btns-group ul-li-center clearfix">
+														<ul class="clearfix">
+															<li><a href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
+															<li><a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
+														</ul>
+													</div>
+												</div>
+										
 												<div class="item-content">
 													<h3 class="item-title">
 														<a href="shop-details-1.html">Digital Infrared Thermometer</a>
@@ -918,165 +1685,45 @@
 										<div class="col-lg-6 col-md-4 col-sm-6 col-xs-12">
 											<div class="product-grid text-center clearfix">
 												<div class="item-image">
-													<a href="shop-details-1.html" class="image-wrap">
-														<img src="assets/images/product/img_13.jpg" alt="image_not_found">
-													</a>
+													<!-- Swiper -->
+													<div class="swiper mySwiper">
+														<div class="swiper-wrapper">
+															<div class="swiper-slide">
+																<img src="assets/images/product/img_12.jpg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/product/img_12.jpg" alt="image1">
+															</div>
+															<div class="swiper-slide">
+																<img src="assets/images/product/img_12.jpg" alt="image1">
+															</div>
+															<!-- Add more slides as needed -->
+														</div>
+														<!-- Optional navigation -->
+
+														<div class="swiper-pagination"></div>
+													</div>
+										
 													<div class="post-label ul-li-right clearfix">
 														<ul class="clearfix">
 															<li class="bg-skyblue">-19%</li>
+															<li class="bg-skyblue">TOP</li>
 														</ul>
 													</div>
+										
 													<div class="btns-group ul-li-center clearfix">
 														<ul class="clearfix">
 															<li><a href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
-															
 															<li><a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
 														</ul>
 													</div>
 												</div>
+										
 												<div class="item-content">
 													<h3 class="item-title">
-														<a href="shop-details-1.html">First Medicine Aid Kit</a>
+														<a href="shop-details-1.html">Digital Infrared Thermometer</a>
 													</h3>
-													<span class="item-price">$29.50</span>
-													<div class="rating-star ul-li-center clearfix">
-														<ul class="clearfix">
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li><i class="las la-star"></i></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="col-lg-6 col-md-4 col-sm-6 col-xs-12">
-											<div class="product-grid text-center clearfix">
-												<div class="item-image">
-													<a href="shop-details-1.html" class="image-wrap">
-														<img src="assets/images/product/img_14.jpg" alt="image_not_found">
-													</a>
-													<div class="btns-group ul-li-center clearfix">
-														<ul class="clearfix">
-															<li><a href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
-															
-															<li><a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
-														</ul>
-													</div>
-												</div>
-												<div class="item-content">
-													<h3 class="item-title">
-														<a href="shop-details-1.html">Aloevera Food Supliment</a>
-													</h3>
-													<span class="item-price">$39.50</span>
-													<div class="rating-star ul-li-center clearfix">
-														<ul class="clearfix">
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li><i class="las la-star"></i></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="col-lg-6 col-md-4 col-sm-6 col-xs-12">
-											<div class="product-grid text-center clearfix">
-												<div class="item-image">
-													<a href="shop-details-1.html" class="image-wrap">
-														<img src="assets/images/product/img_15.jpg" alt="image_not_found">
-													</a>
-													<div class="btns-group ul-li-center clearfix">
-														<ul class="clearfix">
-															<li><a href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
-															
-															<li><a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
-														</ul>
-													</div>
-												</div>
-												<div class="item-content">
-													<h3 class="item-title">
-														<a href="shop-details-1.html">First Medicine Aid Kit</a>
-													</h3>
-													<span class="item-price">$29.50</span>
-													<div class="rating-star ul-li-center clearfix">
-														<ul class="clearfix">
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li><i class="las la-star"></i></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="col-lg-6 col-md-4 col-sm-6 col-xs-12">
-											<div class="product-grid text-center clearfix">
-												<div class="item-image">
-													<a href="shop-details-1.html" class="image-wrap">
-														<img src="assets/images/product/img_16.jpg" alt="image_not_found">
-													</a>
-													<div class="post-label ul-li-right clearfix">
-														<ul class="clearfix">
-															<li class="bg-skyblue">-20%</li>
-														</ul>
-													</div>
-													<div class="btns-group ul-li-center clearfix">
-														<ul class="clearfix">
-															<li><a href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
-															
-															<li><a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
-														</ul>
-													</div>
-												</div>
-												<div class="item-content">
-													<h3 class="item-title">
-														<a href="shop-details-1.html">Digital Temparature meter</a>
-													</h3>
-													<span class="item-price">$39.00</span>
-													<div class="rating-star ul-li-center clearfix">
-														<ul class="clearfix">
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li class="active"><i class="las la-star"></i></li>
-															<li><i class="las la-star"></i></li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="col-lg-6 col-md-4 col-sm-6 col-xs-12">
-											<div class="product-grid text-center clearfix">
-												<div class="item-image">
-													<a href="shop-details-1.html" class="image-wrap">
-														<img src="assets/images/product/img_17.jpg" alt="image_not_found">
-													</a>
-													<div class="post-label ul-li-right clearfix">
-														<ul class="clearfix">
-															<li class="bg-skyblue">-20%</li>
-														</ul>
-													</div>
-													<div class="btns-group ul-li-center clearfix">
-														<ul class="clearfix">
-															<li><a href="cart.html" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
-															
-															<li><a href="wishlist.html" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
-														</ul>
-													</div>
-												</div>
-												<div class="item-content">
-													<h3 class="item-title">
-														<a href="shop-details-1.html">Digital Blood Pressure Machine</a>
-													</h3>
-													<span class="item-price">$39.00</span>
+													<span class="item-price">$49.50</span>
 													<div class="rating-star ul-li-center clearfix">
 														<ul class="clearfix">
 															<li class="active"><i class="las la-star"></i></li>
@@ -1107,9 +1754,24 @@
 									<div class="mb-70 clearfix">
 										<div class="product-list clearfix">
 											<div class="item-image">
-												<a href="shop-details-1.html" class="image-wrap">
-													<img src="assets/images/product/img_3.jpg" alt="image_not_found">
-												</a>
+												<!-- Swiper for Product Images -->
+												<div class="swiper mySwiper">
+													<div class="swiper-wrapper">
+														<div class="swiper-slide">
+															<img src="assets/images/product/img_3.jpg" alt="image1">
+														</div>
+														<div class="swiper-slide">
+															<img src="assets/images/product/img_3.jpg" alt="image1">
+														</div>
+														<div class="swiper-slide">
+															<img src="assets/images/product/img_3.jpg" alt="image1">
+														</div>
+														<!-- Add more slides as needed -->
+													</div>
+													<!-- Optional pagination -->
+													<div class="swiper-pagination"></div>
+												</div>
+										
 												<div class="post-label ul-li-right clearfix">
 													<ul class="clearfix">
 														<li class="bg-skyblue">-30%</li>
@@ -1119,16 +1781,13 @@
 												<div class="btns-group ul-li-center clearfix">
 													<ul class="clearfix">
 														<li><a href="#!" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
-														<li>
-															<a class="tooltipes" href="#!" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quickview-modal">
-																<i class="las la-dot-circle"></i>
-															</a>
-														</li>
+														<li><a class="tooltipes" href="#!" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quickview-modal"><i class="las la-dot-circle"></i></a></li>
 														<li><a href="#!" data-toggle="tooltip" data-placement="top" title="Compare Product"><i class="las la-sync"></i></a></li>
 														<li><a href="#!" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
 													</ul>
 												</div>
 											</div>
+										
 											<div class="rating-star ul-li clearfix">
 												<ul class="clearfix">
 													<li class="active"><i class="las la-star"></i></li>
@@ -1138,6 +1797,241 @@
 													<li><i class="las la-star"></i></li>
 												</ul>
 											</div>
+										
+											<div class="item-content">
+												<span class="post-type">Medical Equipment</span>
+												<h3 class="item-title">
+													<a href="shop-details-1.html">Digital Thermometer</a>
+												</h3>
+												<span class="item-price mb-2">$49.50</span>
+												<p class="mb-30">
+													Best Electronic Digital Thermometer adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+												</p>
+												<a href="#!" class="btn bg-royal-blue">Add To Cart</a>
+											</div>
+										</div>
+										<div class="product-list clearfix">
+											<div class="item-image">
+												<!-- Swiper for Product Images -->
+												<div class="swiper mySwiper">
+													<div class="swiper-wrapper">
+														<div class="swiper-slide">
+															<img src="assets/images/product/img_3.jpg" alt="image1">
+														</div>
+														<div class="swiper-slide">
+															<img src="assets/images/product/img_3.jpg" alt="image1">
+														</div>
+														<div class="swiper-slide">
+															<img src="assets/images/product/img_3.jpg" alt="image1">
+														</div>
+														<!-- Add more slides as needed -->
+													</div>
+													<!-- Optional pagination -->
+													<div class="swiper-pagination"></div>
+												</div>
+										
+												<div class="post-label ul-li-right clearfix">
+													<ul class="clearfix">
+														<li class="bg-skyblue">-30%</li>
+														<li class="bg-skyblue">TOP</li>
+													</ul>
+												</div>
+												<div class="btns-group ul-li-center clearfix">
+													<ul class="clearfix">
+														<li><a href="#!" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
+														<li><a class="tooltipes" href="#!" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quickview-modal"><i class="las la-dot-circle"></i></a></li>
+														<li><a href="#!" data-toggle="tooltip" data-placement="top" title="Compare Product"><i class="las la-sync"></i></a></li>
+														<li><a href="#!" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
+													</ul>
+												</div>
+											</div>
+										
+											<div class="rating-star ul-li clearfix">
+												<ul class="clearfix">
+													<li class="active"><i class="las la-star"></i></li>
+													<li class="active"><i class="las la-star"></i></li>
+													<li class="active"><i class="las la-star"></i></li>
+													<li class="active"><i class="las la-star"></i></li>
+													<li><i class="las la-star"></i></li>
+												</ul>
+											</div>
+										
+											<div class="item-content">
+												<span class="post-type">Medical Equipment</span>
+												<h3 class="item-title">
+													<a href="shop-details-1.html">Digital Thermometer</a>
+												</h3>
+												<span class="item-price mb-2">$49.50</span>
+												<p class="mb-30">
+													Best Electronic Digital Thermometer adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+												</p>
+												<a href="#!" class="btn bg-royal-blue">Add To Cart</a>
+											</div>
+										</div>
+										
+
+										<div class="product-list clearfix">
+											<div class="item-image">
+												<!-- Swiper for Product Images -->
+												<div class="swiper mySwiper">
+													<div class="swiper-wrapper">
+														<div class="swiper-slide">
+															<img src="assets/images/product/img_3.jpg" alt="image1">
+														</div>
+														<div class="swiper-slide">
+															<img src="assets/images/product/img_3.jpg" alt="image1">
+														</div>
+														<div class="swiper-slide">
+															<img src="assets/images/product/img_3.jpg" alt="image1">
+														</div>
+														<!-- Add more slides as needed -->
+													</div>
+													<!-- Optional pagination -->
+													<div class="swiper-pagination"></div>
+												</div>
+										
+												<div class="post-label ul-li-right clearfix">
+													<ul class="clearfix">
+														<li class="bg-skyblue">-30%</li>
+														<li class="bg-skyblue">TOP</li>
+													</ul>
+												</div>
+												<div class="btns-group ul-li-center clearfix">
+													<ul class="clearfix">
+														<li><a href="#!" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
+														<li><a class="tooltipes" href="#!" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quickview-modal"><i class="las la-dot-circle"></i></a></li>
+														<li><a href="#!" data-toggle="tooltip" data-placement="top" title="Compare Product"><i class="las la-sync"></i></a></li>
+														<li><a href="#!" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
+													</ul>
+												</div>
+											</div>
+										
+											<div class="rating-star ul-li clearfix">
+												<ul class="clearfix">
+													<li class="active"><i class="las la-star"></i></li>
+													<li class="active"><i class="las la-star"></i></li>
+													<li class="active"><i class="las la-star"></i></li>
+													<li class="active"><i class="las la-star"></i></li>
+													<li><i class="las la-star"></i></li>
+												</ul>
+											</div>
+										
+											<div class="item-content">
+												<span class="post-type">Medical Equipment</span>
+												<h3 class="item-title">
+													<a href="shop-details-1.html">Digital Thermometer</a>
+												</h3>
+												<span class="item-price mb-2">$49.50</span>
+												<p class="mb-30">
+													Best Electronic Digital Thermometer adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+												</p>
+												<a href="#!" class="btn bg-royal-blue">Add To Cart</a>
+											</div>
+										</div>
+										<div class="product-list clearfix">
+											<div class="item-image">
+												<!-- Swiper for Product Images -->
+												<div class="swiper mySwiper">
+													<div class="swiper-wrapper">
+														<div class="swiper-slide">
+															<img src="assets/images/product/img_3.jpg" alt="image1">
+														</div>
+														<div class="swiper-slide">
+															<img src="assets/images/product/img_3.jpg" alt="image1">
+														</div>
+														<div class="swiper-slide">
+															<img src="assets/images/product/img_3.jpg" alt="image1">
+														</div>
+														<!-- Add more slides as needed -->
+													</div>
+													<!-- Optional pagination -->
+													<div class="swiper-pagination"></div>
+												</div>
+										
+												<div class="post-label ul-li-right clearfix">
+													<ul class="clearfix">
+														<li class="bg-skyblue">-30%</li>
+														<li class="bg-skyblue">TOP</li>
+													</ul>
+												</div>
+												<div class="btns-group ul-li-center clearfix">
+													<ul class="clearfix">
+														<li><a href="#!" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
+														<li><a class="tooltipes" href="#!" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quickview-modal"><i class="las la-dot-circle"></i></a></li>
+														<li><a href="#!" data-toggle="tooltip" data-placement="top" title="Compare Product"><i class="las la-sync"></i></a></li>
+														<li><a href="#!" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
+													</ul>
+												</div>
+											</div>
+										
+											<div class="rating-star ul-li clearfix">
+												<ul class="clearfix">
+													<li class="active"><i class="las la-star"></i></li>
+													<li class="active"><i class="las la-star"></i></li>
+													<li class="active"><i class="las la-star"></i></li>
+													<li class="active"><i class="las la-star"></i></li>
+													<li><i class="las la-star"></i></li>
+												</ul>
+											</div>
+										
+											<div class="item-content">
+												<span class="post-type">Medical Equipment</span>
+												<h3 class="item-title">
+													<a href="shop-details-1.html">Digital Thermometer</a>
+												</h3>
+												<span class="item-price mb-2">$49.50</span>
+												<p class="mb-30">
+													Best Electronic Digital Thermometer adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+												</p>
+												<a href="#!" class="btn bg-royal-blue">Add To Cart</a>
+											</div>
+										</div>
+										<div class="product-list clearfix">
+											<div class="item-image">
+												<!-- Swiper for Product Images -->
+												<div class="swiper mySwiper">
+													<div class="swiper-wrapper">
+														<div class="swiper-slide">
+															<img src="assets/images/product/img_3.jpg" alt="image1">
+														</div>
+														<div class="swiper-slide">
+															<img src="assets/images/product/img_3.jpg" alt="image1">
+														</div>
+														<div class="swiper-slide">
+															<img src="assets/images/product/img_3.jpg" alt="image1">
+														</div>
+														<!-- Add more slides as needed -->
+													</div>
+													<!-- Optional pagination -->
+													<div class="swiper-pagination"></div>
+												</div>
+										
+												<div class="post-label ul-li-right clearfix">
+													<ul class="clearfix">
+														<li class="bg-skyblue">-30%</li>
+														<li class="bg-skyblue">TOP</li>
+													</ul>
+												</div>
+												<div class="btns-group ul-li-center clearfix">
+													<ul class="clearfix">
+														<li><a href="#!" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
+														<li><a class="tooltipes" href="#!" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quickview-modal"><i class="las la-dot-circle"></i></a></li>
+														<li><a href="#!" data-toggle="tooltip" data-placement="top" title="Compare Product"><i class="las la-sync"></i></a></li>
+														<li><a href="#!" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
+													</ul>
+												</div>
+											</div>
+										
+											<div class="rating-star ul-li clearfix">
+												<ul class="clearfix">
+													<li class="active"><i class="las la-star"></i></li>
+													<li class="active"><i class="las la-star"></i></li>
+													<li class="active"><i class="las la-star"></i></li>
+													<li class="active"><i class="las la-star"></i></li>
+													<li><i class="las la-star"></i></li>
+												</ul>
+											</div>
+										
 											<div class="item-content">
 												<span class="post-type">Medical Equipment</span>
 												<h3 class="item-title">
@@ -1153,67 +2047,40 @@
 
 										<div class="product-list clearfix">
 											<div class="item-image">
-												<a href="shop-details-1.html" class="image-wrap">
-													<img src="assets/images/product/img_11.jpg" alt="image_not_found">
-												</a>
-												<div class="btns-group ul-li-center clearfix">
-													<ul class="clearfix">
-														<li><a href="#!" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
-														<li>
-															<a class="tooltipes" href="#!" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quickview-modal">
-																<i class="las la-dot-circle"></i>
-															</a>
-														</li>
-														<li><a href="#!" data-toggle="tooltip" data-placement="top" title="Compare Product"><i class="las la-sync"></i></a></li>
-														<li><a href="#!" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
-													</ul>
+												<!-- Swiper for Product Images -->
+												<div class="swiper mySwiper">
+													<div class="swiper-wrapper">
+														<div class="swiper-slide">
+															<img src="assets/images/product/img_3.jpg" alt="image1">
+														</div>
+														<div class="swiper-slide">
+															<img src="assets/images/product/img_3.jpg" alt="image1">
+														</div>
+														<div class="swiper-slide">
+															<img src="assets/images/product/img_3.jpg" alt="image1">
+														</div>
+														<!-- Add more slides as needed -->
+													</div>
+													<!-- Optional pagination -->
+													<div class="swiper-pagination"></div>
 												</div>
-											</div>
-											<div class="rating-star ul-li clearfix">
-												<ul class="clearfix">
-													<li class="active"><i class="las la-star"></i></li>
-													<li class="active"><i class="las la-star"></i></li>
-													<li class="active"><i class="las la-star"></i></li>
-													<li class="active"><i class="las la-star"></i></li>
-													<li><i class="las la-star"></i></li>
-												</ul>
-											</div>
-											<div class="item-content">
-												<span class="post-type">Equipment</span>
-												<h3 class="item-title">
-													<a href="shop-details-1.html">Surgical Face Mask</a>
-												</h3>
-												<span class="item-price mb-2">$19.50</span>
-												<p class="mb-30">
-													Best Electronic Digital Thermometer adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
-												</p>
-												<a href="#!" class="btn bg-royal-blue">Add To Cart</a>
-											</div>
-										</div>
-
-										<div class="product-list clearfix">
-											<div class="item-image">
-												<a href="shop-details-1.html" class="image-wrap">
-													<img src="assets/images/product/img_14.jpg" alt="image_not_found">
-												</a>
+										
 												<div class="post-label ul-li-right clearfix">
 													<ul class="clearfix">
-														<li class="bg-skyblue">-19%</li>
+														<li class="bg-skyblue">-30%</li>
+														<li class="bg-skyblue">TOP</li>
 													</ul>
 												</div>
 												<div class="btns-group ul-li-center clearfix">
 													<ul class="clearfix">
 														<li><a href="#!" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
-														<li>
-															<a class="tooltipes" href="#!" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quickview-modal">
-																<i class="las la-dot-circle"></i>
-															</a>
-														</li>
+														<li><a class="tooltipes" href="#!" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quickview-modal"><i class="las la-dot-circle"></i></a></li>
 														<li><a href="#!" data-toggle="tooltip" data-placement="top" title="Compare Product"><i class="las la-sync"></i></a></li>
 														<li><a href="#!" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
 													</ul>
 												</div>
 											</div>
+										
 											<div class="rating-star ul-li clearfix">
 												<ul class="clearfix">
 													<li class="active"><i class="las la-star"></i></li>
@@ -1223,148 +2090,20 @@
 													<li><i class="las la-star"></i></li>
 												</ul>
 											</div>
+										
 											<div class="item-content">
-												<span class="post-type">Medicine</span>
+												<span class="post-type">Medical Equipment</span>
 												<h3 class="item-title">
-													<a href="shop-details-1.html">Aloevera Food Supliment</a>
+													<a href="shop-details-1.html">Digital Thermometer</a>
 												</h3>
-												<span class="item-price mb-2">$27.00</span>
+												<span class="item-price mb-2">$49.50</span>
 												<p class="mb-30">
 													Best Electronic Digital Thermometer adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
 												</p>
 												<a href="#!" class="btn bg-royal-blue">Add To Cart</a>
 											</div>
 										</div>
-
-										<div class="product-list clearfix">
-											<div class="item-image">
-												<a href="shop-details-1.html" class="image-wrap">
-													<img src="assets/images/product/img_17.jpg" alt="image_not_found">
-												</a>
-												<div class="post-label ul-li-right clearfix">
-													<ul class="clearfix">
-														<li class="bg-skyblue">SALE</li>
-													</ul>
-												</div>
-												<div class="btns-group ul-li-center clearfix">
-													<ul class="clearfix">
-														<li><a href="#!" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
-														<li>
-															<a class="tooltipes" href="#!" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quickview-modal">
-																<i class="las la-dot-circle"></i>
-															</a>
-														</li>
-														<li><a href="#!" data-toggle="tooltip" data-placement="top" title="Compare Product"><i class="las la-sync"></i></a></li>
-														<li><a href="#!" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="rating-star ul-li clearfix">
-												<ul class="clearfix">
-													<li class="active"><i class="las la-star"></i></li>
-													<li class="active"><i class="las la-star"></i></li>
-													<li class="active"><i class="las la-star"></i></li>
-													<li class="active"><i class="las la-star"></i></li>
-													<li><i class="las la-star"></i></li>
-												</ul>
-											</div>
-											<div class="item-content">
-												<span class="post-type">Equipment</span>
-												<h3 class="item-title">
-													<a href="shop-details-1.html">Digital Blood Pressure Machine</a>
-												</h3>
-												<span class="item-price mb-2">$49.00</span>
-												<p class="mb-30">
-													Best Electronic Digital Thermometer adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
-												</p>
-												<a href="#!" class="btn bg-royal-blue">Add To Cart</a>
-											</div>
-										</div>
-
-										<div class="product-list clearfix">
-											<div class="item-image">
-												<a href="shop-details-1.html" class="image-wrap">
-													<img src="assets/images/product/img_1.jpg" alt="image_not_found">
-												</a>
-												<div class="btns-group ul-li-center clearfix">
-													<ul class="clearfix">
-														<li><a href="#!" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
-														<li>
-															<a class="tooltipes" href="#!" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quickview-modal">
-																<i class="las la-dot-circle"></i>
-															</a>
-														</li>
-														<li><a href="#!" data-toggle="tooltip" data-placement="top" title="Compare Product"><i class="las la-sync"></i></a></li>
-														<li><a href="#!" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="rating-star ul-li clearfix">
-												<ul class="clearfix">
-													<li class="active"><i class="las la-star"></i></li>
-													<li class="active"><i class="las la-star"></i></li>
-													<li class="active"><i class="las la-star"></i></li>
-													<li class="active"><i class="las la-star"></i></li>
-													<li><i class="las la-star"></i></li>
-												</ul>
-											</div>
-											<div class="item-content">
-												<span class="post-type">Equipment</span>
-												<h3 class="item-title">
-													<a href="shop-details-1.html">Surgical Hand Gloves</a>
-												</h3>
-												<span class="item-price mb-2">$27.00</span>
-												<p class="mb-30">
-													Best Electronic Digital Thermometer adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
-												</p>
-												<a href="#!" class="btn bg-royal-blue">Add To Cart</a>
-											</div>
-										</div>
-
-										<div class="product-list clearfix">
-											<div class="item-image">
-												<a href="shop-details-1.html" class="image-wrap">
-													<img src="assets/images/product/img_18.jpg" alt="image_not_found">
-												</a>
-												<div class="post-label ul-li-right clearfix">
-													<ul class="clearfix">
-														<li class="bg-skyblue">-19%</li>
-													</ul>
-												</div>
-												<div class="btns-group ul-li-center clearfix">
-													<ul class="clearfix">
-														<li><a href="#!" data-toggle="tooltip" data-placement="top" title="Add To Cart"><i class="las la-shopping-basket"></i></a></li>
-														<li>
-															<a class="tooltipes" href="#!" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quickview-modal">
-																<i class="las la-dot-circle"></i>
-															</a>
-														</li>
-														<li><a href="#!" data-toggle="tooltip" data-placement="top" title="Compare Product"><i class="las la-sync"></i></a></li>
-														<li><a href="#!" data-toggle="tooltip" data-placement="top" title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="rating-star ul-li clearfix">
-												<ul class="clearfix">
-													<li class="active"><i class="las la-star"></i></li>
-													<li class="active"><i class="las la-star"></i></li>
-													<li class="active"><i class="las la-star"></i></li>
-													<li class="active"><i class="las la-star"></i></li>
-													<li><i class="las la-star"></i></li>
-												</ul>
-											</div>
-											<div class="item-content">
-												<span class="post-type">Medicine</span>
-												<h3 class="item-title">
-													<a href="shop-details-1.html">Food Supliment</a>
-												</h3>
-												<span class="item-price mb-2">$27.00</span>
-												<p class="mb-30">
-													Best Electronic Digital Thermometer adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
-												</p>
-												<a href="#!" class="btn bg-royal-blue">Add To Cart</a>
-											</div>
-										</div>
+										
 									</div>
 
 									<div class="pagination-nav ul-li-center clearfix">
@@ -1573,8 +2312,34 @@
 		<!-- mobile menu - jquery include -->
         <script src="assets/js/mCustomScrollbar.js"></script>
 
+		<script>
+			document.querySelectorAll('.products-category > ul > li > a').forEach(item => {
+				item.addEventListener('click', function () {
+					const parent = this.parentElement;
+					parent.classList.toggle('open');
+				});
+			});
+		</script>
 		<!-- custom - jquery include -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script>
+			var swiper = new Swiper(".mySwiper", {
+				loop: true,
+				autoplay: {
+					delay: 3000,  /* Time in milliseconds between slides */
+					disableOnInteraction: false,  /* Allows autoplay to continue even if the user interacts with the swiper */
+				},
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+				navigation: false,  /* Disables navigation arrows */
+			});
+		</script>
+		
+		
 		<script src="assets/js/custom.js"></script>
+
 
 
 	</body>
